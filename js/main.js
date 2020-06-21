@@ -2,7 +2,6 @@ element = document.getElementById("header");
 element.innerHTML = 
     '<nav>' +
         '<li class="title"><a href="index.html">Tabassum Kakar</a></li>'+
-        // '<li class="dummy"><a href="">DUMMY TEXT</a></li>' +
         '<div><li class="page"><a href="projects.html">Portfolio</a></li>'+
         '<li class="label">|</li>'+
         '<li class="page"><a href="publications.html">Publications</a></li>'+
@@ -21,6 +20,3 @@ ftElement.innerHTML = '<table id="social-accounts">' +
                         '</td></tr>' +       
                     '</table>';
 
-window.addEventListener("hashchange", function () {
-    window.scrollTo(window.scrollX, window.scrollY - 100);
-});
