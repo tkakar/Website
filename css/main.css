@@ -790,7 +790,13 @@ a.readMore:hover{
 }
 
 .designMenu{
-	display:inline-block;
+	/* text-align: center; */
+	/* display:inline-block; */
+}
+
+div.designMenu ul{
+	text-align: center;
+	/* display:inline-block; */
 }
 
 a.menuPage{
