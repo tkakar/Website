@@ -1,0 +1,109 @@
+<html lang="en-US">
+
+
+<head>
+	<meta name="description" content="Personal Website." />
+	<meta name="keywords" content="Tabassum, Kakar, tkakar, Tabassum Kakar, USA, United States, Visual Analytics, Data Visualization, Analytics, HCI, Human-Computer Interaction, UX, User Researcher, User Experience, Machine Learning" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+	<script type='text/javascript' src='js/fontawesome5.js'></script>
+	<title> DIVA </title>
+</head>
+
+<body>
+<div id="header"></div> 
+<div id="mainPage">
+
+<div class="wrapper ProjectWrapper">
+	<section>
+		<div class="floatParent">
+			<h2 class="floatLeft"> Drug-Drug Interaction Analytics (DIVA)</h2> 
+			<div class= "links projects">
+				<span class="project-links">  
+						<a href="http://diva.wpi.edu:3000/" target="_blank"><i class="fas fa-home"></i> Web </a>
+						<a href="papers/diva.pdf" target="_blank"><i class="far fa-file-pdf"></i> Paper </a>
+						<a href="https://www.youtube.com/watch?v=9SqcoXu1EGY\u0026feature=youtu.be" target="_blank"><i class="fas fa-video"></i> Video </a> 
+						<a href="papers/diva.pdf" target="_blank"><i class="fab fa-github"></i> Code </a> 
+				</span>
+			</div>
+		</div><br> 
+
+		<div class="halfLine"></div>
+		
+		<div><a class="readMore" href="./DIVA.html#related"> View Publications </a></div> <br>
+
+		<h3>Backgound & Motivation</h3>
+		<p>
+		Adverse reactions caused by drug-drug interactions (DDI) are a major public health concern. Currently, adverse reaction signals are
+		detected through a tedious manual process in which drug safety analysts review a large number of reports collected through
+		post-marketing drug surveillance. On the other hand, applying machine learning techniques generate a large number of candidate signals disconnected
+		from the underlying reports that serve as context, and ultimately require human intervention to be validated
+		in the domain context as a true signal warranting action. 
+		<br> <br>
+		DIVA, a visual analytics approach, addresses these challenges by aligning with the drug safety analysis workflow to support the detection, screening, and verification of
+		candidate drug interaction signals by providing interactive visualizations.  
+		</p>
+
+		<!-- <h2>User Research</h2> -->
+		<!-- <p>
+		Field visits and semi-structured interviews with drug safety evaluators at the FDA to understand their workflow and challenges.
+		</p> -->
+		
+		<h3>Design Process and Challenges</h3>
+		<p>
+
+		<p><strong>Data. </strong>A machine generated DDI signal is a complex data model consisting of the interacting drugs, a set of adverse reactions and a numeric score to quantify the significance of the signal. To make this data useful for the drug safety analysis
+		integration of domain knowledge such as the severity of the reactions, the status of the signals being known or unknown, and interactive linking to the underlying reports is crucial. 
+		</p>
+		<!-- <br> -->
+		<p>
+		<strong>Tasks. </strong>Based on our user research, the system should support analysts in the screening and exploration of these machine generated signals, where they can interactively prioritize important signals, and analyze them to see if further investigation is needed.   
+		<!-- <br> -->
+		</p>
+		<p>
+		<strong>Design Alternative.</strong>
+		Given the complexity of the DDI signal data and the user tasks, one visualziation cannot 	
+		</p>
+
+		<h3> DIVA's Interface </h3>
+		  
+			
+		<p>The interface of DIVA (shown below) consists of three multiple coordinated
+				views to help with the drug safety tasks. The views aim to align with the work-flow of the
+				analysts so that they can explore the major components of the AIM
+				in an iterative manner. 
+				The Screening view (left) gives an overview of all machine-generated drug-drug interactions supporting an analyst in screening unknown and
+				high scored signals. The Triage view (middle), composed of small multiples, shows all the drug interactions associated with a particular
+				drug or set of drugs. It helps analysts prioritize a drug for review
+				based on the aggregated interestingness of its interactions. The Forensics view (right) includes adverse reactions related to each
+				drug-drug interaction for further exploration. To further
+				investigate a drug interaction, at the lowest level, a reports view
+				visualizes the line-listings and text narratives of reports associated
+				with a selected drug interaction.
+		</p>
+
+		<img src="projects/DIVAFull.png" alt="Project 1"/> <br><br>	
+		
+		<h3>Project Contributions</h3>
+		<p> 
+			In this project, I conducted user research, defined project goals, designed visual mockups, developed low- to high-fidelity prototypes and conducted case studies and interviews with domain experts.
+		</p>
+		
+		<!-- <iframe style="width:100%; height:480px; margin-bottom:20px;" src="./research/PhD/control/videos/cart-pole_edited_player.html?embedIFrameId=embeddedSmartPlayerInstance" scrolling="no" frameborder ="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe> -->
+		
+		<h3 id="related">Related publications</h3>
+		<ul>
+			<li> <a class="related" href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.13674?casa_token=CEHecSYjKUAAAAAA%3A0P52LEgI7zcIXquyAL4R9qER-Emm6_D6WkbSoaS7IFTYesiBCJK-FyfJtYNE9vhljB4JuPCvFI3-nK2O" target="_blank">
+				Kakar, Tabassum, Xiao Qin, Elke A. Rundensteiner, Lane Harrison, Sanjay K. Sahoo, and Suranjan De. "DIVA: Exploration and Validation of Hypothesized Drug-Drug Interactions." In Computer Graphics Forum (EuroVis), vol. 38, no. 3, pp. 95-106. 2019.
+			</a></li>
+			<li> <a class="related" href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.13674?casa_token=CEHecSYjKUAAAAAA%3A0P52LEgI7zcIXquyAL4R9qER-Emm6_D6WkbSoaS7IFTYesiBCJK-FyfJtYNE9vhljB4JuPCvFI3-nK2O" target="_blank">
+				Kakar, Tabassum, Xiao Qin, Andrew Schade, Brian McCarthy, Huy Quoc Tran, Brian Zylich, Elke Rundensteiner, Lane Harrison, Sanjay K. Sahoo, and Suranjan De. "DEVES: interactive signal analytics for drug safety." In Proceedings of the 27th ACM International Conference on Information and Knowledge Management (CIKM), pp. 1891-1894. 2018.
+			</a></li>
+		</ul>
+	</section>
+	<div id="footer"></div>
+</div>
+<script type='text/javascript' src='js/main.js'></script>
+
+</body>

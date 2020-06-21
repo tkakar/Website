@@ -1,66 +1,22 @@
-$(function() {
-    var newHash      = "",
-        $mainContent = $("#wrapper"),
-        $pageWrap    = $("#mainPage"),
-        baseHeight   = 0,
-        $el;
-        
-    $pageWrap.height($pageWrap.height());
-    baseHeight = $pageWrap.height() - $mainContent.height();
-    
-    // $("nav").delegate("a", "click", function() {
-    //     window.location.hash = $(this).attr("href");
-    //     return false;
-    // });
-    
-    $(window).bind('hashchange', function(){
-        newHash = window.location.hash.substring(1);
-        if (newHash) {
-            $mainContent
-                .find("#guts")
-                .fadeOut(200, function() {
-                    $mainContent.hide().load(newHash + " #guts", function() {
-                        $mainContent.fadeIn(200, function() {
-                            $pageWrap.animate({
-                                height: baseHeight + $mainContent.height() + "px"
-                            });
-                        });
-                        $("nav a").removeClass("current");
-                        $("nav a[href='"+newHash+"']").addClass("current");
-                    });
-                });
-        };
-        
-    });
-    
-    $(window).trigger('hashchange');
-});
+element = document.getElementById("header");
+element.innerHTML = 
+    '<nav>' +
+        '<li class="title"><a href="index.html">Tabassum Kakar</a></li>'+
+        // '<li class="dummy"><a href="">DUMMY TEXT</a></li>' +
+        '<div><li class="page"><a href="projects.html">Portfolio</a></li>'+
+        '<li class="label">|</li>'+
+        '<li class="page"><a href="publications.html">Publications</a></li>'+
+        '<li class="label">|</li>'+
+        '<li class="page"><a href="awards.html">Awards</a></li> </div>'+
+    '</nav>';
 
-
-$(function(){
-    // var clicked =""
-    // $('#header a[href]').click(function(){
-    //     console.log($(this).attr('innerText'))
-    //     clicked = $(this).attr('innerText')
-    //     // if ($(this).attr('href').includes("index") && $(this).attr('innerText').includes("Tabassum")
-    // });
-$('#header a[href]').each(function() {
-    if (window.location.pathname.includes($(this).attr('href'))|| window.location.pathname.includes($(this).attr('href'))) {
-        if($(this).attr('href').includes("index") && $(this).attr('innerText').includes("Home")){ 
-            // console.log("Home", $(this).attr('innerText'), $(this))
-            $(this).addClass('activeMenu');
-        }
-        if ($(this).attr('href').includes("index") && $(this).attr('innerText').includes("Tabassum")){
-            // console.log("Home", $(this).attr('innerText'), $(this))
-            // console.log("Hi")
-            $(this).removeClass('activeMenu');
-        }
-        else if (!$(this).attr('innerText').includes("Tabassum") ||  $(this).attr('innerText').includes("Home"))
-            $(this).addClass('activeMenu');
-    }
-       
-});
-
-});
-
-
+ftElement = document.getElementById("footer");
+ftElement.innerHTML = '<table id="social-accounts">' +
+                        '<tr><td>' +
+                        '<a href="https://github.com/tkakar"><i class="fab fa-github"></i> GitHub: @tkakar </a>'+
+                        '</td>'+
+                        '<td><a href="https://scholar.google.com/citations?user=yDwzxBcAAAAJ"> <i class="fab fa-google"></i> Google Scholar </a>'+
+                        '</td>' + 
+                        '<td><a href="https://www.linkedin.com/in/TabassumKakar"> <i class="fab fa-linkedin-square"></i> LinkedIn</a>'+
+                        '</td></tr>' +       
+                    '</table>';
