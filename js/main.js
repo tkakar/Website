@@ -20,3 +20,7 @@ ftElement.innerHTML = '<table id="social-accounts">' +
                         '<td><a href="https://www.linkedin.com/in/TabassumKakar"> <i class="fab fa-linkedin-square"></i> LinkedIn</a>'+
                         '</td></tr>' +       
                     '</table>';
+
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 100);
+});

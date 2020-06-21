@@ -781,18 +781,10 @@ a.readMore:hover{
 }
 
 .related{
-	color:#333;
+	color:black;
 	font-size: 0.9em;
 }
 
-.related a{
-	
-}
-
-.designMenu{
-	/* text-align: center; */
-	/* display:inline-block; */
-}
 
 div.designMenu ul{
 	text-align: center;
@@ -800,14 +792,14 @@ div.designMenu ul{
 }
 
 a.menuPage{
-	color: rgb(109, 107, 107) ;
+	color: rgb(94, 91, 91) ;
 	padding: 5px 10px;
 	margin-right: 10px;
 	text-decoration: underline;
 }
 
 a.menuPage:hover{
-	color: rgb(138, 136, 136) ;
+	color: rgb(49, 47, 47) ;
 }
 
 span.menuPage {
