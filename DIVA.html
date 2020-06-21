@@ -29,75 +29,105 @@
 			</div>
 		</div><br> 
 
-		<div class="halfLine"></div>
+		<div class="designMenu">
+			<ul>
+				<!-- <li> -->
+					<span class="menuPage"> Jump to:  </span>
+					<a class="menuPage" href="./DIVA.html#Background"> Background </a>
+					<a class="menuPage" href="./DIVA.html#Design"> Design Process </a>
+					<a class="menuPage" href="./DIVA.html#Interface"> DIVA Interface</a>
+					<a class="menuPage" href="./DIVA.html#CaseStudy"> Case Study</a>
+				<!-- </li> -->
+				<!-- <li> -->
+					<a class="menuPage" href="./DIVA.html#related">  Publications </a>
+				<!-- </li> -->
+			</ul>
+			
 		
-		<div><a class="readMore" href="./DIVA.html#related"> View Publications </a></div> <br>
+		</div> <br>
+		<!-- <div><a class="readMore" href="./DIVA.html#related"> View Publications </a></div> <br> -->
 
-		<h3>Backgound & Motivation</h3>
+		<h3 id="Background">Backgound & Motivation</h3>
 		<p>
 		Adverse reactions caused by drug-drug interactions (DDI) are a major public health concern. Currently, adverse reaction signals are
 		detected through a tedious manual process in which drug safety analysts review a large number of reports collected through
-		post-marketing drug surveillance. On the other hand, applying machine learning techniques generate a large number of candidate signals disconnected
-		from the underlying reports that serve as context, and ultimately require human intervention to be validated
+		post-marketing drug surveillance. On the other hand, applying machine learning techniques generate a large number of candidate signals that are disconnected
+		from the underlying reports important for providing context, and ultimately require human intervention to be validated
 		in the domain context as a true signal warranting action. 
 		<br> <br>
 		DIVA, a visual analytics approach, addresses these challenges by aligning with the drug safety analysis workflow to support the detection, screening, and verification of
 		candidate drug interaction signals by providing interactive visualizations.  
 		</p>
 		
-		<h3>Design Process and Challenges</h3>
+		<h3 id="Design">Design Process and Challenges</h3>
 		<p>
 
-		<p><strong>Data. </strong>A machine generated DDI signal is a complex data model consisting of the interacting drugs, a set of adverse reactions and a numeric score to quantify the significance of the signal. To make this data useful for the drug safety analysis
+		<p><strong>Data. </strong>A machine generated DDI signal is composed of a complex data model consisting of the interacting drugs, a set of adverse reactions, an interaction leading to multiple reaction sets, and a numeric score to quantify the significance of the signal. To make this data useful for the drug safety analysis
 		integration of domain knowledge such as the severity of the reactions, the status of the signals being known or unknown, and interactive linking to the underlying reports is crucial. 
 		</p>
 		<p>
-		<strong>Tasks. </strong>Based on our user research, the system should support analysts in the screening and exploration of these machine generated signals, where they can interactively prioritize important signals, and analyze them to see if further investigation is needed.   
+		<strong>Tasks. </strong>Based on our user research, the system should support analysts in the screening and exploration of these machine generated signals, where they can interactively screen and prioritize important signals i.e., highly scored and unknown signals, and analyze them to see if further investigation is needed.   
 		</p>
 		<p>
 		<strong>Visual Design and Alternatives.</strong>
-		Given the complexity of the DDI signal data and user tasks, designing a single visualization was not feasible. Therefore based on literature review and suitability of the visualization techniques for the underlying data, multiple visualizations were designed. To help analysts explore the 
-		set of all the machine-generated drug-drug interactions (DDIs) the possible candidates were adjacency matrix and node-link diagram. Due to sparsity in the matrix, a node-link diagram is used in the final design.
-		To help analaysts prioritize drugs based on their signals, a node-link diagram based small-multiples layout is designed to show the DDIs associated with each drug. To support the analysis of DDIs in detail by displaying their associated adverse reactions, a tree diagram is designed following the same visual encodings. 	
+		Given the complexity of the DDI signals and user tasks, designing a single visualization is not feasible. Therefore based on literature review and suitability of the visualization techniques for the underlying data, multiple visualizations are considered. To help analysts explore the 
+		set of all the machine-generated drug-drug interactions (DDIs) the first suitable candidate is an Adjacency Matrix (below figures). 
+		
+		<br><br><img src="projects/divamatrix.png" alt="Adjacency Matrix"/> <br><br>
+
+		Due to sparsity of the matrix for real data, next a node-link diagram is designed. <p>In the node-link diagrams, the nodes are mapped to the drugs and the links depict the interaction between drugs. The visual encodings, i.e., color and size of 
+		the links (Screening view) and nodes (Triage view) are mapped to the significance score of the signals and status of the reactions, respectively.</p>
+		
+		The node-link design for all the views are iteratively refined to choose the most suitable visual encodings
+		for mapping the underlying signals data. 
+		
+		<br><br><img src="projects/divanl.png" alt="Node-Link Diagrams"/> <br><br>
+		
+		To help analaysts prioritize drugs based on their signals, a node-link diagram based small-multiples layout (Signal Triage View) is designed to show the DDIs associated with a single drug. 
+		Finally, to support the analysis of DDIs in detail by displaying their associated adverse reactions, a tree diagram (Signal Forensics View) is designed following similar visual encodings. 	
 		</p>
-
-		<p>In the node-link diagrams, the nodes represent drugs and the link represents the interaction between drugs. The visual encodings, i.e., color and size of 
-	    the links (Screening view) and nodes (Triage view) are mapped to the significance score of the signals and status of the reactions, respectively.</p>
-
-		<h3> DIVA's Interface </h3>
+		
+		<h3 id="Interface"> DIVA Interface </h3>
 		  
 		<p>The interface of DIVA (shown below) consists of three multiple coordinated
 				views to help with the drug safety tasks. The views aim to align with the work-flow of the
-				analysts so that they can explore the major components of the AIM
-				in an iterative manner. 
+				analysts so that they can explore the major components of the DDI signal
+				in an iterative manner.  </p>
+		<p>
 				The Screening view (left) gives an overview of all machine-generated drug-drug interactions supporting an analyst in screening unknown and
 				high scored signals. The Triage view (middle), composed of small multiples, shows all the drug interactions associated with a particular
 				drug or set of drugs. It helps analysts prioritize a drug for review
-				based on the aggregated interestingness of its interactions. The Forensics view (right) includes adverse reactions related to each
+				based on the aggregated significance of its interactions and severity of reactions. The Forensics view (right) includes adverse reactions related to each
 				drug-drug interaction for further exploration. To further
-				investigate a drug interaction, at the lowest level, a reports view
+				investigate a drug interaction, at the detail level, a reports view
 				visualizes the line-listings and text narratives of reports associated
 				with a selected drug interaction.
 		</p>
-
-		<p>Please read the <a href="./DIVA.html#related">publication</a> for more details on the design process and evaluation of DIVA. </p>
-		<img src="projects/DIVAFull.png" alt="Project 1"/> <br><br>	
 		
-		<h3>Case Study</h3>
+		<br><img src="projects/divaFull.png" alt="Project 1"/> <br><br>	
+		
+		
+		
+		<h3 id="CaseStudy">Case Study</h3>
 		<p>
 			This case study conducted by a drug safety analyst at the FDA demonstrates the effectiveness of DIVA in vetting unknown DDI signals.
-			During analysis, the analyst explores the signals related to the drugs assigned to her and observes Lansoprazole with a high scored (dark color) unknown interaction with Digoxin. The analyst investigates this DDI further in the Forensics view 
-			to analyze the associated adverse reaction, which in this case is a severe one. The analyst then views the reports associated with this signal to validate if it is a potential safety issue, and discovers that other drugs in the reports are the underlying
-			reason for this severe adverse reaction.</p>
+			During analysis, the analyst explores the signals related to the drugs assigned to her and quickly identifies Lansoprazole with a high scored (dark color) unknown interaction with Digoxin. The analyst investigates this DDI further in the Forensics view 
+			to analyze the associated adverse reaction, and notices that it's a serious reaction. The analyst is curious about this severe signal and interactively views the reports associated with this signal to validate if it is a potential safety issue. Upon reviewing the reports, she discovers that other drugs taken by the patient in these reports might be the underlying
+			reason for this severe reaction.</p>
 
-		<p>This demonstrates how DIVA can help analysts interpret and interactively explore complex DDI signals generated by machine learning that are mere hypotheses about potential drug safety issues that need validation.  </p>
+		<p>This demonstrates how DIVA can help analysts not only interpret but also easily identify interesting and complex DDI signals generated by machine learning that are mere hypotheses about potential drug safety issues that need validation.  </p>
 
 
 		<img src="projects/divacase.png" alt="Project 1"/> <br><br>
 		
+		<h3>Future Direction</h3>
+		<p> 
+			Due to the visual clutter in the Screening View, in the future drug classes can be leveraged to cluster signals associated with drugs in the same class. This will help in comparing drugs within and across drug classes as well. 
+		</p>
+
 		<h3>Project Contributions</h3>
 		<p> 
-			In this project, I conducted user research, defined project goals, designed visual mockups, developed low- to high-fidelity prototypes and conducted case studies and interviews with domain experts.
+			In this project, I conducted user research, defined project goals, designed visual mockups, developed low- and high-fidelity prototypes, and conducted case studies and interviews with domain experts to evaluate the prototypes.
 		</p>
 		
 		
