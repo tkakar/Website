@@ -16,7 +16,7 @@
 <div id="mainPage">
 
 <div class="wrapper ProjectWrapper">
-	<section>
+	<section><br>
 		<div class="floatParent">
 			<h2 class="floatLeft"> Medication Error Screening and Visualization (MEV)</h2> 
 			<div class= "links projects">
@@ -39,8 +39,6 @@
 			</ul>
 		</div> <br>
 
-		
-
 		<h3>Backgound & Motivation</h3>
 		<p>
 		  A medication error involves mistakes that are caused by wrong administration or handling of drug due to ambiguity of drug label or
@@ -49,34 +47,65 @@
 		  However, analysis of these semi-structured reports is a time-consuming and tedious process.
 		</p>
 		<p>
-		  Medication Error Visualization (MEV) is an anlytics tools that leverages Natural Language Processing (NLP) to visualize semi-structured reports to help FDA analysts in the screening of critical medication errors.
-		</p>
+		  Medication Error Visualization (MEV) is an anlytics tools that leverages Natural Language Processing (NLP) 
+		  and interactive visuals to display semi-structured reports to help FDA analysts in the screening of critical medication errors.
+		</p> <br>
 		
 		<h3 id="Design">Design Process and Challenges</h3>
-		<p><strong>Data. </strong>A machine generated DDI signal is composed of a complex data model consisting of the interacting drugs, a set of adverse reactions, an interaction leading to multiple reaction sets, and a numeric score to quantify the significance of the signal. To make this data useful for the drug safety analysis
-		integration of domain knowledge such as the severity of the reactions, the status of the signals being known or unknown, and interactive linking to the underlying reports is crucial. 
+		<p><strong>Data. </strong> The medication error reports contain structured information about patients such as age and gender, and medication errors such as types of errors, stages where
+		error has occurred, the names of the medications and the causes of the errors. Majority of the information about the errors such as stage, type and cause are present in the text narratives. We extract
+		this information using NLP and domain dictionaries. The challenge with these text entities is that they are high-dimensional categorical attributes. For instance, hundreds of drugs can be reported
+		in a week. Therefore, a visual design that can display a large number of attribute categories in a compact display with minimal visual clutter is needed.
+		</p>
+		<p><strong>Task. </strong>
+		The drug safety analysts at the FDA receive hundreds of medication error reports on a weekly basis. As a first task, they aim to see an overall summary of the
+		their weekly reports and then being able to interactively filter and analyze reports based on critical attribute values to decide whether an action needs to be taken to mitigate the error. 
+		</p>
+		<p><strong>Design Considerations. </strong>
+		To design an interactive overview of the reports set, I considered multiple visual designs based on literature review.
+		The candidate visualizations to represent these categorical attributes included a multi-layer radial chart, bar-charts, parallel coordinates, node-link diagrams, and treemap visualization aa depicted in the following medium-fidelity prototypes.
+		In these designs, the severity of the reports (outcome) for each attribute value is mapped to the color, and the size of the bar or chunk is mapped to the count of the reports. 
+		Based on discussions with users, the treemap visualization (right) is selected as the final design. However, with real data the color hue created different shades, therefore, color saturation 
+		is used in the final prototype. 
 		</p>
 		
-		<br><br><img src="projects/MEV.png" alt="Project 2"/> <br><br>
+		<br><br><img src="projects/MEVdesign.png" alt="Design Alternatives"/> <br><br>
 		<p>
+		</p> <br>
+
+		<h3 id="Interface"> MEV Interface </h3>
+		  
+		<p>The interface of MEV (shown below) consists of three multiple coordinated
+			views to help with the medication error reports screening. 
+			The top panel displays the structured information such as demographics of the patients. The middle panel represents a 
+			treemap visualization for each of the high-dimensional categorical attributes extracted via NLP. The bottom panel represents a summary of the 
+			reports count per day. Interactive brushing and linking is provided to select and analyze report with particular attribute values. 
 		</p>
 
-		<br><br><img src="projects/MEV.png" alt="Project 2"/> <br><br>
+		<br><br><img src="projects/MEV.png" alt="Final Interface"/> <br><br>
 				
 		<p>
 		</p>
+		<h3 id="CaseStudy">User Study</h3>
+		<p>
+			I conducted a task-based user study with 10 drug safety evaluators at the FDA, with low-level tasks involved in the screening of the medication errors.</p>
+			Overall participants took less time to complete the tasks with MEV as compared to their current tools and perceived the tasks easier when performed with MEV. Moreover, the SUS score for MEV was 85 out of 100.
+		</p>
+
+
+		<img src="projects/MEVeval.png" alt="Evaluation"/> <br><br> <br>
 		
 		<h3>Project Participation</h3>
 		<p> 
 			In this project, I conducted user research, defined project goals, designed visual mockups, developed low- to medium-fidelity prototypes, and led the development team (MQP) to develop a high-fidelity interactive prototype.
-		</p>
+		</p> <br>
 		
 		<h3 id="related">Related publications</h3>
 		<ul>
-			<li> <a class="related" href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.13674?casa_token=CEHecSYjKUAAAAAA%3A0P52LEgI7zcIXquyAL4R9qER-Emm6_D6WkbSoaS7IFTYesiBCJK-FyfJtYNE9vhljB4JuPCvFI3-nK2O" target="_blank">
+			<li> <a class="related" href="/papers/mev.pdf" target="_blank">
 				Kakar, Tabassum, Xiao Qin, Cory M. Tapply, Oliver Spring, Derek Murphy, Daniel Yun, Elke A. Rundensteiner et al. "MEV: Visual Analytics for Medication Error Detection." In VISIGRAPP (3: IVAPP), pp. 72-82. 2019.
 			</a></li>
-			<li> <a class="related" href="https://onlinelibrary.wiley.com/doi/full/10.1111/cgf.13674?casa_token=CEHecSYjKUAAAAAA%3A0P52LEgI7zcIXquyAL4R9qER-Emm6_D6WkbSoaS7IFTYesiBCJK-FyfJtYNE9vhljB4JuPCvFI3-nK2O" target="_blank">
+			<li> <a class="related" href="/papers/MedViz.pdf" target="_blank">
 				Kakar, Tabassum, Xiao Qin, Cory M. Tapply, Oliver Spring, Derek Murphy, Daniel Yun, Elke A. Rundensteiner et al. "Designing a Visual Analytics System for Medication Error Screening and Detection." In International Joint Conference on Computer Vision, Imaging and Computer Graphics, pp. 285-312. Springer, Cham, 2019.
 			</a></li>
 		</ul>
