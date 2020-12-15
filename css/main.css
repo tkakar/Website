@@ -805,3 +805,25 @@ a.menuPage:hover{
 span.menuPage {
 	text-decoration: none;
 }
+.iconText{
+	width: 70%;
+	height:auto;
+}
+.alignCenter{
+	text-align: center;
+	padding: 10px 10px;
+}
+
+/* .imageAligned{
+	display:inline-block;
+	 min-width:2.2cm; 
+	 height:3.8cm; 
+	 text-align:center;
+	 vertical-align:middle
+
+}
+
+.imageFloatText{
+	display:inline-block;
+	vertical-align: middle;
+}  */

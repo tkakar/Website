@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
 	<script type='text/javascript' src='js/fontawesome5.js'></script>
-	<title> MEV </title>
+	<title> Smardio </title>
 </head>
 
 <body>
@@ -17,19 +17,8 @@
 
 <div class="wrapper ProjectWrapper">
 	<section><br>
-		<div class="floatParent">
-			<h2 class="floatLeft"> Medication Error Screening and Visualization (MEV)</h2> 
-			<div class= "links projects">
-					<span class="project-links">  
-							<a href="http://mev.wpi.edu:3001" target="_blank"><i class="fas fa-home"></i> Web</a>
-							<a href="papers/mev.pdf" target="_blank"><i class="far fa-file-pdf"></i> Paper </a>
-							<!-- <a href="https://www.youtube.com/watch?v=9SqcoXu1EGY\u0026feature=youtu.be" target="_blank"><i class="fas fa-video"></i> Video </a>  -->
-							<a href="https://github.com/tkakar/MEV-MQP" target="_blank"><i class="fab fa-github"></i> Code </a> 
-					</span>
-			</div>
-		</div><br> 
 
-		<div class="designMenu">
+		<!-- <div class="designMenu">
 			<ul>
 				<span class="menuPage"> Go to:  </span>
 				<a class="menuPage" href="./MEV.html#Design"> Design Process </a>
@@ -37,100 +26,128 @@
 				<a class="menuPage" href="./MEV.html#CaseStudy"> Usability Study</a>
 				<a class="menuPage" href="./MEV.html#related">  Publications </a>
 			</ul>
-		</div> <br>
+		</div> <br> -->
 
 		<h3>Goal</h3>
 		<p>
-		  To design a visual analytics tool that leverages Natural Language Processing (NLP) 
-		  and interactive visualizations to support the exploration of semi-structured drug safety reports to help drug safety evaluators (users) in screening critical medication errors.
+			To design a highly interactive and personal audiobook mobile app that allows users to bookmark, highlight excerpts, and add annotations. 
+
 		</p>
 
-		<h3>Backgound</h3>
+		<h3>Research and Competitor Analysis</h3>
 		<p>
-		  A medication error involves mistakes that are caused by wrong administration or handling of drug due to ambiguity of drug label or
-		  carton. Every year, serious preventable medication errors occur in 3.8 million inpatient admissions and 3.3 million outpatient visits with an estimated annual cost burden
-		  of <strong>$20 billion</strong>. FDA collects and analyzes semi-structured medication error reports to take appropriate regulatory actions to prevent these errors from happening in the future. 
-		  <br>
-		  Currently, FDA uses spreadsheets to analyze these reports which can be time-consuming and tedious. My goal is to design an interactive system that aids the screening and analysis of these reports.
+		To have a better understanding of the required features, I explored a few apps.
+		<ul>
+			<li>Amazon Kindle and Apple Books app to see the interactive features of reading an eBook and how bookmarks, highlights, and notes are added in each of these apps.	</li>
+			<li>Audible, Apple's Podcast and Books Apps, Libby, Pandora, and Soundcloud to take a closer look at audio players and their capabilities, features, and shortcomings.</li>
+		</ul>
 		</p>
-	    <br>
-		
-		<h3 id="Design">Design Process and Challenges</h3>
-		<p><strong>Data. </strong> The medication error reports contain structured information about patients such as age and gender, and medication errors such as types of errors, stages where
-		error has occurred, the names of the medications, and the causes of the errors. Majority of the information about is present in the text narratives. We extract
-		this information using NLP and domain dictionaries. The challenge with these text entities is that they are high-cardinality categorical attributes. For instance, hundreds of drugs can be reported
-		in a week. Therefore, a visual design that can display a large number of attribute categories in a compact display with minimal visual clutter is needed.
-		</p>
-		<p><strong>Task. </strong>
-		The drug safety evaluators at the FDA receive hundreds of these reports on a weekly basis. As a first task, they aim to see an overall summary of the
-		their weekly reports and then filter and analyze reports based on critical attribute values to decide whether an action needs to be taken to mitigate the error. 
-		</p>
+		<figure>
+			<img src="projects/smardio/research.png" alt="Competitor Analysis"><br><br>
+			<figcaption>
+			Analysis of existing ebooks, audiobooks, and audioplayer apps to understand their capabilities, features, and shortcomings.
+			</figcaption>
+		</figure>
 
-		<p><strong>Design Considerations. </strong>
-		To design an interactive overview of the reports set, I considered multiple visual designs based on literature review.
-		The candidate visualizations to represent these categorical attributes included a multi-layer radial chart, bar-charts, parallel coordinates, node-link diagrams, and treemap visualization aa depicted in the following medium-fidelity prototypes.
-		In these designs, the severity of the reports (outcome) for each attribute value is mapped to the color, and the size of the bar or chunk is mapped to the count of the reports. 
-		Based on discussions with users, the treemap visualization (right) is selected as the final design. However, with real data the color hue created different shades, therefore, color saturation 
-		is used in the final prototype. 
-		</p>
+		
+	    <!-- <br> -->
+		
+		<h3 id="Design">Features Brainstorming and User Flow </h3>
+		<figure>
+				<img src="projects/smardio/research2.png" alt="JourneyMap">
+	    </figure>
 		
 		<!-- <img src="projects/MEVdesign.png" alt="Design Alternatives"/> <br><br> -->
-
+		<h3>Paper Sketch to Add Notes and Highlights</h3>
 		<figure>
-			<img src="projects/MEVdesign.png" alt="Design Alternatives"><br><br>
-			<figcaption><strong>Left</strong> - Alternative designs including multi-layer donut chart, bar-chart, and parallel coordinates to display the medication error related information.
-				<strong>Right</strong> - Multip-layer Treemap-like design selected for the problem due to compact layout. 
-			</figcaption>
+				<img src="projects/smardio/sketch.png" alt="sketch">
+				<figcaption></figcaption>
 		</figure>
+		
+		<figure>
+			<p>Audioplayer page - the focus of the design. Blue color elements are added for demonstration purposes and are not part of the design.</p>
+				<img src="projects/smardio/playerpage.png" alt="playerpage">
+				<figcaption></figcaption>
+	    </figure>
 
 		<p>
 		</p> <br>
 
-		<h3 id="Interface"> MEV Interface </h3>
-		  
-		<p> The interface of MEV (shown below) consists of three multiple coordinated
-			views to help with the medication error reports screening. 
-			The top panel displays the structured information such as demographics of the patients. The middle panel represents a 
-			treemap visualization for each of the high-categorical categorical attributes extracted via NLP. The bottom panel represents a summary of the 
-			reports count per day. Interactive brushing and linking is provided to select and analyze report with particular attribute values. 
-		</p>
-
-		
+		<h3 id="Interface"> Adding Notes Using Text and Audio</h3>
+		<!-- User has the option to add notes via typing or recording audios. -->
 		<figure>
-			<img src="projects/MEVFull.png" alt="Final Interface"/> <br><br>
-			<figcaption> Medication Error Visualization (MEV) Interface to identify critical medication errors by interactively exploring reports information. 
-			</figcaption>
-		</figure>		
-
-		<p>
-		</p>
-		<h3 id="CaseStudy">User Study</h3>
-		<p>
-			I designed and conducted a within subject task-based usability study with 10 drug safety evaluators at the FDA. I designed low-level tasks such as information search and extraction involved in the screening of the medication errors identified via contextual inquiries. Participants were asked to complete a system usability questionnaire at the end. </p>
-		</p>
-
-		<figure>
-			<img src="projects/MEVeval.png" alt="Evaluation"/> <br><br><br>
-			<figcaption> <strong>Left</strong> - System Usability Score (SUS) for MEV was 85 out of 100. <strong>Right</strong> - Overall participants took less time to complete the tasks with MEV as compared to their current tools and perceived the tasks easier when performed with MEV.  
-			</figcaption>
+				<img src="projects/smardio/note1.png" alt="playerpage">
+				<figcaption></figcaption>
 		</figure>
 
+		<h3 id="Interface">Adding Notes Using Audio</h3>
+
+		<figure>
+				<img src="projects/smardio/note2.png" alt="playerpage">
+				<figcaption></figcaption>
+		</figure>
 		
+		<h3 id="Interface">  Adding Bookmark </h3>
+		<p>
 		
-		<h3>Project Participation</h3>
+		</p>
+		<figure>
+				<img src="projects/smardio/bookmark.png" alt="playerpage">
+				<figcaption></figcaption>
+	    </figure>
+
+		<h3 id="Interface">  Adding Highlight </h3>
+		<figure>
+				<img src="projects/smardio/highlight.png" alt="playerpage">
+				<figcaption></figcaption>
+	    </figure>
 		<p> 
-			In this project, I conducted the user research to understand user's tasks and pain points, defined project goals, designed visual mockups, developed low- to medium-fidelity prototypes, and led and mentored the engineering team (MQP) to develop a high-fidelity interactive prototype.
-		</p> <br>
+		</p>
+
+		<h3 id="Interface">  Searching for Keyword Within the Book  </h3>
+		<figure>
+				<img src="projects/smardio/search.png" alt="playerpage">
+				<figcaption></figcaption>
+		</figure>
 		
-		<h3 id="related">Related publications</h3>
+		<h3 id="Interface"> Viewing Activity </h3>
+		<figure>
+				<img src="projects/smardio/activity.png" alt="playerpage">
+				<figcaption></figcaption>
+		</figure>
+		
+		<h3 id="Interface"> Viewing Book Chapters </h3>
+		<figure>
+				<img src="projects/smardio/chapters.png" alt="playerpage">
+				<figcaption></figcaption>
+	    </figure>
+		
+		<h3>Dashboard and Analytics</h3>
+		<p> 
+			The dashboard allows users to set and track their reading goals. A summary of the weekly activity is also provided. 
+		</p> 
+		<figure>
+				<img src="projects/smardio/dashboard.png" alt="playerpage">
+				<figcaption></figcaption>
+		</figure>
+		
+		<h3>Additional Features and Food for Thought</h3>
 		<ul>
-			<li> <a class="related" href="/papers/mev.pdf" target="_blank">
-				Kakar, Tabassum, Xiao Qin, Cory M. Tapply, Oliver Spring, Derek Murphy, Daniel Yun, Elke A. Rundensteiner et al. "MEV: Visual Analytics for Medication Error Detection." In VISIGRAPP (3: IVAPP), pp. 72-82. 2019.
-			</a></li>
-			<li> <a class="related" href="/papers/MedViz.pdf" target="_blank">
-				Kakar, Tabassum, Xiao Qin, Cory M. Tapply, Oliver Spring, Derek Murphy, Daniel Yun, Elke A. Rundensteiner et al. "Designing a Visual Analytics System for Medication Error Screening and Detection." In International Joint Conference on Computer Vision, Imaging and Computer Graphics, pp. 285-312. Springer, Cham, 2019.
-			</a></li>
+			<li>Adding dictionary access in the app.</li>
+			<li>Audio to text conversion for audio notes.</li>
+			<li>Zoom in/out on the track player (to control track breakdown).</li>
+			<li>Attention check points set by the user to help them stay focused while listening to a chapter.</li>
+			<li>Combine audiobook and eBook in th app by playing the audio as well as displaying the text (controlled by users, whichever they prefer). </li>
 		</ul>
+		
+
+
+
+
+
+
+
+
 	</section>
 	<div id="footer"></div>
 </div>
