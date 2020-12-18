@@ -1,6 +1,6 @@
 element = document.getElementById("header");
 element.innerHTML = 
-    '<nav>' +
+    '<nav class="clearfix">' +
         '<li class="title"><a href="index.html">Tabassum Kakar</a></li>'+
         '<div><li class="page"><a href="projects.html">Portfolio</a></li>'+
         '<li class="label">|</li>'+

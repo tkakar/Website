@@ -279,6 +279,7 @@ section {
 	padding: 10px 0px 50px 0px;
 	margin: 20px 0;
 	margin-top: 70px
+	
 }
 
 section #title {
@@ -898,4 +899,10 @@ figcaption{
 .imageAligned p{
 	font-size:16px;
 	line-height: 24px;
+  }
+
+  .vspace { height: 75px;}
+
+  h3, h2{
+	padding-top: 85px; margin-top: -85px;
   }
