@@ -138,8 +138,13 @@
 
 		<h3 id="Design">Design Process and Challenges</h3>
 		<p><strong>Data. </strong> The medication error reports contain structured information about patients such as age and gender, and medication errors such as types of errors, stages where
-		error has occurred, the names of the medications, and the causes of the errors. Majority of the information about is present in the text narratives. We extract
-		this information using NLP and domain dictionaries. The challenge with these text entities is that they are high-cardinality categorical attributes. For instance, hundreds of drugs can be reported
+		error has occurred, the names of the medications, and the causes of the errors. 
+		<br><br>
+		Majority of the information about is present in the text narratives. We extract
+		this information using NLP and domain dictionaries. 
+		
+		<br><br>
+		The challenge with these text entities is that they are high-cardinality categorical attributes. For instance, hundreds of drugs can be reported
 		in a week. Therefore, a visual design is needed that can display a large number of attribute categories in a compact display with minimal visual clutter.
 		</p>
 		<p><strong>Task. </strong>
@@ -153,9 +158,12 @@
 
 		<p><strong>Design Considerations. </strong>
 		To design an interactive overview of the reports set, I considered multiple visual designs based on literature review.
+		<br><br>
 		The candidate visualizations to represent these categorical attributes included a multi-layer radial chart, bar-charts, parallel coordinates, node-link diagrams, and treemap visualization aa depicted in the following medium-fidelity prototypes.
+		<br><br>
 		In these designs, the severity of the reports (outcome) for each attribute value is mapped to the color, and the size of the bar or chunk is mapped to the count of the reports. 
-		Based on discussions with users, the treemap visualization (right) is selected as the final design. However, with real data the color hue created different shades, therefore, color saturation 
+		<br><br>
+		Based on analyzing the pros and cons of each design, and discussions with users, the treemap visualization (right) is selected as the final design. However, with real data the color hue created different shades, therefore, color saturation 
 		is used in the final prototype. 
 		</p>
 		
@@ -175,8 +183,13 @@
 		  
 		<p> The interface of MEV (shown below) consists of three multiple coordinated
 			views to help with the medication error reports screening. 
-			The top panel displays the structured information such as demographics of the patients. The middle panel represents a 
-			treemap visualization for each of the high-cardinality categorical attributes extracted via NLP. The bottom panel represents the temporal summary of the reports, that is,
+			<br><br>
+			The top panel displays the structured information such as demographics of the patients. 
+			
+			<br><br>The middle panel represents a 
+			treemap visualization for each of the high-cardinality categorical attributes extracted via NLP.
+			<br><br>
+			 The bottom panel represents the temporal summary of the reports, that is,
 			reports count per day. Interactive brushing and linking is provided to select and analyze report with particular attribute values. The color encodes the severity of the reports.
 		</p>
 
