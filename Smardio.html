@@ -16,7 +16,7 @@
 <div id="mainPage">
 
 <div class="wrapper ProjectWrapper">
-	<section><br>
+	<section>
 
 		<!-- <div class="designMenu">
 			<ul>
@@ -27,110 +27,121 @@
 				<a class="menuPage" href="./MEV.html#related">  Publications </a>
 			</ul>
 		</div> <br> -->
-
-		<h3>Goal</h3>
+		<img src="projects/smardio/banner1.jpg"/>
+		<h3>Design Challenge - Overview and Goal</h3>
 		<p>
-			To design a highly interactive and personal audiobook mobile app that allows users to bookmark, highlight excerpts, and add annotations. 
+			While annotations such as adding notes, bookmarks, and highlights are useful in reading books and many ebooks app provide these features. Not many audiobook players, with the exception of a few, allow users to annotate a book as they are listening. One such app <strong><a href="https://www.overdrive.com/apps/libby/">Libby</a></strong> provides the features of annotations.
+			<br> <br>The goal of this design is to improve Libby by making it highly interactive and personal audiobook mobile app that allows users to bookmark, highlight excerpts, and add annotations. 
+		</p> <br>
 
-		</p>
 
-		<h3>Research and Competitor Analysis</h3>
+		<h3>Opportunities for Design Improvement</h3>
+		<p> I experienced Libby as a user and identified the following pros and cons related to adding annoations to a book. </p>
+		
+		<figure>
+				<img src="projects/smardio/libby.jpg" alt="Libby"><br><br>
+				<figcaption class="alignCenterCaption">
+				Analysis of the annotation features in the Libby App.
+				</figcaption>
+			</figure>
+		
+		<div>
+			<div>
+				<p class="subheading">Key Pluses of Libby</p>
+				<ul>						
+					<li>Track breakdown by time segment.</li>
+					<li>Visual feedback of annotations.</li>
+					<li>Activity history with a summary of annotations.</li>
+					<li>Color options for highlight.</li>
+				</ul>
+			</div>
+
+			<div>
+				<p class="subheading">Design Opportunities</p>
+				<ul>
+					<li>Bookmark does not allow adding remarks.</li>
+					<li>Unable to rename a bookmark.</li>
+					<li>Highlighting is not intuitive (difficult to find how to highlight).</li>
+					<li>Highlight is activated only when track is playing.</li>
+					<li>Highlight is only added to the audio at the current player location and cannot not be added to an excerpt (audio segment).</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+
+		<h3>Research of Other Audio and Ebook Apps</h3>
 		<p>
 		To have a better understanding of the required features, I explored a few apps.
 		<ul>
 			<li>Amazon Kindle and Apple Books app to see the interactive features of reading an eBook and how bookmarks, highlights, and notes are added in each of these apps.	</li>
-			<li>Audible, Apple's Podcast and Books Apps, Libby, Pandora, and Soundcloud to take a closer look at audio players and their capabilities, features, and shortcomings.</li>
+			<li>Audible, Apple's Podcast and Books Apps, Pandora, and Soundcloud to take a closer look at audio players and their capabilities, features, and shortcomings.</li>
 		</ul>
-		</p>
+		</p> <br>
 		<figure>
-			<img src="projects/smardio/research.png" alt="Competitor Analysis"><br><br>
-			<figcaption>
-			Analysis of existing ebooks, audiobooks, and audioplayer apps to understand their capabilities, features, and shortcomings.
-			</figcaption>
+				<img src="projects/smardio/research.jpg" alt="Competitor Analysis"><br><br>
+				<figcaption class="alignCenterCaption">
+				Analysis of existing ebooks, audiobooks, and audioplayer apps to understand their capabilities, features, and shortcomings.
+				</figcaption>
 		</figure>
 
-		
-	    <!-- <br> -->
-		
 		<h3 id="Design">Features Brainstorming and User Flow </h3>
+		<p>Features identified from researching different aduio and ebook apps.</p>
 		<figure>
 				<img src="projects/smardio/research2.png" alt="JourneyMap">
-	    </figure>
+		</figure>
+		
+			
+		<h3>Identified Features for a Good User Experience</h3>
+		<p>
+			Based on my research and brainstorming, below is the list of features that I prioritized to be included in our audiobook player app.
+			<ul>
+				<li>Highlight an audio by selecting excerpts.</li>
+				<li>View text related to the highlight.</li>
+				<li>Share highlighted text/audio with others.</li>
+				<li>Add Bookmarks.</li>
+				<li>Add Notes (both using text and by recording audio notes).</li>
+				<li>View and Edit the Annotation (Activity) History.</li>
+				<li>Search in the audiobook for a word.</li>
+				<li>View summary of activity for each chapter in a book.</li>
+				<li>Dashboard that allows user to set goals and monitor their reading routine.</li>
+				<li>View summary of annotation activity for each book (currently reading) in the dashboard.</li>
+			</ul>
+		</p>
 		
 		<!-- <img src="projects/MEVdesign.png" alt="Design Alternatives"/> <br><br> -->
 		<h3>Paper Sketch to Add Notes and Highlights</h3>
 		<figure>
 				<img src="projects/smardio/sketch.png" alt="sketch">
+				<figcaption class="alignCenterCaption"></figcaption>
+		</figure> <br>
+		
+		<h3> <img class="iconTextHeading" src="thumbnails/smardioIcon.png" alt="Smardio"> Audioplayer Screen</h3>
+		<figure>
+			<p>Audioplayer screen - the focus of the design. Blue color elements are added for demonstration purposes and are not part of the design.</p>
+				<img src="projects/smardio/playerPage.png" alt="playerpage">
+				<figcaption class="alignCenterCaption"></figcaption>
+	    </figure>
+		<p>
+		</p> <br>
+
+		<h3 id="Interface"> App Design with Search and Annotation Features</h3>
+		<!-- User has the option to add notes via typing or recording audios. -->
+		<figure>
+				<img src="projects/smardio/allActivity.jpg" alt="noteText">
 				<figcaption></figcaption>
 		</figure>
-		
+
+		<h3 id="Interface"> Library and Dashboard Screens</h3>
 		<figure>
-			<p>Audioplayer page - the focus of the design. Blue color elements are added for demonstration purposes and are not part of the design.</p>
-				<img src="projects/smardio/playerPage.png" alt="playerpage">
-				<figcaption></figcaption>
+			<p></p>
+				<img src="projects/smardio/main.jpg" alt="playerpage"> <br> <br>
+				<figcaption class="alignCenterCaption">Library is the main screen of the app with options to access the Dashboard and current book being read (Reading Now). Search on the Library screen is used to search for books.</figcaption>
 	    </figure>
 
 		<p>
 		</p> <br>
 
-		<h3 id="Interface"> Adding Notes Using Text and Audio</h3>
-		<!-- User has the option to add notes via typing or recording audios. -->
-		<figure>
-				<img src="projects/smardio/note1.png" alt="noteText">
-				<figcaption></figcaption>
-		</figure>
-
-		<h3 id="Interface">Adding Notes Using Audio</h3>
-
-		<figure>
-				<img src="projects/smardio/note2.png" alt="noteAudio">
-				<figcaption></figcaption>
-		</figure>
-		
-		<h3 id="Interface">  Adding Bookmark </h3>
-		<p>
-		
-		</p>
-		<figure>
-				<img src="projects/smardio/bookmark.png" alt="bookmark">
-				<figcaption></figcaption>
-	    </figure>
-
-		<h3 id="Interface">  Adding Highlight </h3>
-		<figure>
-				<img src="projects/smardio/highlight.png" alt="highlight">
-				<figcaption></figcaption>
-	    </figure>
-		<p> 
-		</p>
-
-		<h3 id="Interface">  Searching for Keyword Within the Book  </h3>
-		<figure>
-				<img src="projects/smardio/search.png" alt="search">
-				<figcaption></figcaption>
-		</figure>
-		
-		<h3 id="Interface"> Viewing Activity </h3>
-		<figure>
-				<img src="projects/smardio/activity.png" alt="activity">
-				<figcaption></figcaption>
-		</figure>
-		
-		<h3 id="Interface"> Viewing Book Chapters </h3>
-		<figure>
-				<img src="projects/smardio/chapters.png" alt="chapters">
-				<figcaption></figcaption>
-	    </figure>
-		
-		<h3>Dashboard and Analytics</h3>
-		<p> 
-			The dashboard allows users to set and track their reading goals. A summary of the weekly activity is also provided. 
-		</p> 
-		<figure>
-				<img src="projects/smardio/dashboard.png" alt="dashboard">
-				<figcaption></figcaption>
-		</figure>
-		
 		<h3>Additional Features and Food for Thought</h3>
 		<ul>
 			<li>Adding dictionary access in the app.</li>
@@ -139,14 +150,10 @@
 			<li>Attention check points set by the user to help them stay focused while listening to a chapter.</li>
 			<li>Combine audiobook and eBook in th app by playing the audio as well as displaying the text (controlled by users, whichever they prefer). </li>
 		</ul>
-		
 
 
-
-
-
-
-
+		<!-- <h3>Reflections</h3>
+		<p>This was a good design practice for me to </p> -->
 
 	</section>
 	<div id="footer"></div>

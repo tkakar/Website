@@ -809,21 +809,93 @@ span.menuPage {
 	width: 70%;
 	height:auto;
 }
+
+.iconTextHeading{
+	width: 15%;
+	height:auto;
+}
 .alignCenter{
 	text-align: center;
 	padding: 10px 10px;
 }
 
-/* .imageAligned{
-	display:inline-block;
-	 min-width:2.2cm; 
-	 height:3.8cm; 
+.alignCenterCaption{
+	text-align: center;
+	/* padding: 10px 10px; */
+}
+.subheading{
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	margin:0px !important;
+}
+/* .floatRight{
+	float:right;
+}
+
+.floatLeft{
+	float: left;
+} */
+
+.imageAligned{
+	float:left;
+	/* display:inline-block; */
+	 /* min-width:2.2cm; 
+	 height:3.8cm;  */
 	 text-align:center;
-	 vertical-align:middle
+	 width: 35%;
+	 vertical-align:middle;
+	 margin-right: 20px;
 
 }
 
 .imageFloatText{
-	display:inline-block;
+	float:right;
+	width:60%;
+	text-align: center;
+	/* display:inline-block; */
 	vertical-align: middle;
-}  */
+} 
+
+
+.imageRightAligned{
+	float:right;
+	/* display:inline-block; */
+	 /* min-width:2.2cm; 
+	 height:3.8cm;  */
+	 text-align:center;
+	 width: 55%;
+	 vertical-align:middle;
+	 /* margin-right: 20px; */
+
+}
+
+.imageFloatTextLeft{
+	float:left;
+	width:40%;
+	text-align: center;
+	/* display:inline-block; */
+	vertical-align: middle;
+	margin-right: 20px;
+} 
+
+figcaption{
+	line-height:24px;
+	font-size: 16px;
+}
+
+
+.TextVMiddle{
+	padding: 40px 0px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+
+.imageAligned p{
+	font-size:16px;
+	line-height: 24px;
+  }
