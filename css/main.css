@@ -17,8 +17,9 @@ img {
 body {
 	padding: 0px 0 20px 0px;
 	margin: 0px; 
-	line-height: 30px;
-    font: 1.125em "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.6;
+	/* line-height: 30px; */
+	font: 1.125em "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: black;
 	font-weight: normal;
 	/* background-attachment: fixed !important;
@@ -92,7 +93,7 @@ dl {
 #footer{
 	position:fixed;
 	max-width: 900px;
-	padding: 20px;
+	padding: 20px 20px 0px 20px;
 	background:white;
 	bottom :0px;
 }
@@ -108,7 +109,8 @@ dl {
 }
 
 section img {
-	max-width: 100%
+	max-width: 100%;
+	width:100%;
 }
 
 section ul{
@@ -381,6 +383,7 @@ table.non-outline th {
 
 table#social-accounts{
 	table-layout: fixed;
+	margin:0;
 }
 
 table#social-accounts td {
@@ -763,7 +766,7 @@ div.columnView p{
 
 .ProjectWrapper p{
 	text-align: justify;
-	line-height: 24px;
+	line-height: 30px;
 }
 
 
@@ -905,4 +908,29 @@ figcaption{
 
   h3, h2{
 	padding-top: 85px; margin-top: -85px;
+  }
+
+  blockquote{
+	width: 90%;
+    border-left: 5px solid #fcd136;
+	font-size: 20px;
+    font-style: italic;
+    color: black;
+    margin: 25px;
+    padding: 10px 10px 10px 20px;
+    font-weight: 200;
+  }
+
+  .centerQuote{
+	display: block;
+	margin-left: auto;
+	margin-right:auto;
+  }
+
+  figure{
+	  margin: 20px 0px;
+  }
+
+  .tableEducation td li{
+		line-height: 26px;
   }
