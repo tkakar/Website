@@ -664,7 +664,7 @@ section .large-image {
 }
 
 #selected-publications{
-	padding:  0px 10px 10px 10px;;
+	/* padding:  0px 10px 10px 10px; */
 }
 
 .projectSection{
@@ -890,7 +890,7 @@ figcaption{
 
 
 .TextVMiddle{
-	padding: 40px 0px;
+	padding: 10px 0px;
 }
 
 .clearfix::after {
@@ -912,7 +912,8 @@ figcaption{
 
   blockquote{
 	width: 90%;
-    border-left: 5px solid #fcd136;
+	border-left: 5px solid #fcd136; 
+	/* ED7D67 */
 	font-size: 20px;
     font-style: italic;
     color: black;

@@ -44,78 +44,68 @@
 
 		<h3>What are Medication Errors?</h3>
 		<p>
-		  A medication error involves preventable mistakes that are caused by wrong administration or handling of drug due to ambiguity of drug label or
+		  Medication errors involve preventable mistakes that are caused by wrong administration or handling of drug due to ambiguity of drug label or
 		  carton. 
-		  <br><br>
-		  Every year, serious preventable medication errors occur in 3.8 million inpatient admissions and 3.3 million outpatient visits with an estimated annual cost burden
+		  <!-- <br><br> -->
+		  Every year, serious preventable medication errors occur in 3.8 million inpatient admissions and 3.3 million outpatient visits with an estimated annual cost
 		  of <strong>$20 billion</strong>. 
 		  <br><br>
 
 		  <h3>How are Medication Errors Detected?</h3>
 		 <p>
-		    The U.S. Food and Drug Administration (FDA) analyzes semi-structured medication error reports collected via <a href="https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers">adverse event reporting system</a> to take appropriate regulatory actions to prevent these errors from happening in the future. 
+		    The U.S. Food and Drug Administration (FDA) analyzes medication error reports collected via <a href="https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers">adverse event reporting system</a> to take appropriate regulatory actions to prevent these errors from happening in the future. 
 		 </p> <br>
 
 		<div class="clearfix">
 			<div class="imageAligned"><img src="projects/ME.jpg" alt="Medication Error Example"/> <br>
-			<p>Example of a similar looking drug container label for different dosages. </p> </div>
+			<p><strong>Left.</strong> Example of a similar looking drug container label for different dosages with a potential for error. <strong>Right.</strong> Fix for error.</p> </div>
 			<div class="imageFloatText"><p>Cisatracurium is a muscle paralyzing drug used before surgeries. Using an appropriate dose is crucial to avoid serious consequences.<br> <br>
-				Left side represents an example of similar looking drug container labels for different dosages which can be mistakenly used. <br> <br>
-				Right side represents a possible container revision by the FDA that easily distinguishes the different dosages to avoid medication errors resulting in life-threatening outcomes. 
+				Similar looking drug container labels (Left) for different dosages can result in errors. 
+				<!-- <br> <br> -->
+				A possible container revision (Right) by the FDA that easily distinguishes the different dosages to avoid medication errors resulting in life-threatening outcomes. 
 			</p></div>
 		</div> <br>
 
-		<h3>How are Medication Error Reports Analyzed Currently?</h3>
+		<h3>Challenge</h3>
 		<div class="clearfix">
-				<div class="imageRightAligned" ><img src="projects/FBIS.png" alt="Current Tools"/> <br>
-				<p> </p> </div>
+				<div class="imageRightAligned" ><img src="projects/FBIS.png" alt="Current Tools"/> <br><br>
+				<p>Current tool used at the FDA for medication error screening.</p></div>
 				<div class="imageFloatTextLeft" ><p class="TextVMiddle">Currently, FDA uses spreadsheets or traditional SQL-style table
 						layout to analyze these reports which can be time-consuming and tedious. 
 					
-					<br><br>My goal is to design an interactive system that aids in the screening and analysis of these reports.
+				<br>	<br><strong>The goal of this project </strong> is to design a visual analytics tool that 
+					helps drug safety evaluators in screening and prioritizing critical medication errors.  
 				</p></div>
-		</div> 
-		<!-- <br> -->
+		</div> <br>
 
-		<!-- <div class="vspace" id="Goal"></div> -->
+		<h3>Team</h3>
+		<p> 
+			In this project, I led all the activities from ideation and user research to the development of functional system.  I worked with FDA stakeholders, domain experts from the DMEPA team at the FDA, researchers, data scientists, and developers. 
+		</p> <br>
+
+		<!-- <div class="vspace" id="Goal"></div>
 		<h2  class="alignCenterCaption" id="Goal">Project Goal</h2>
 		<p class="alignCenterCaption">
 				To design a visual analytics tool that leverages interactive visualizations to support the exploration of semi-structured medication error reports to help drug safety evaluators in screening and prioritizing critical medication errors.  
-		</p> <br>
+		</p> <br> -->
 
 		<div id="Research">
-<!-- 
-				We organized a series of one-on-one expert observations and semi-structured interview
-				sessions with five. Our main goal was to gain an understanding
-				of the current workflow of reviewing the stream of incoming error reports
-				and in particular, to identify the challenges faced by the analysts while reviewing
-				these reports.
-				
-				
-				Our first session was to become familiar with the domain and included discussions
-				about the overall medication error detection process, the reports and
-				the challenges of analyzing these reports. As a second step, to get precise facts
-				and figures, we designed a questionnaire that included detailed questions about
-				the workflow based on the initial discussions. 
-			
-				Our second session with the same five drug safety analysts after few weeks
-				involved field observation [26] followed by administering our carefully prepared
-				questionnaire. We observed these analysts at the FDA in a think-aloud manner
-				while performing their routine tasks of reports analysis.  -->
-				
-				<!-- This helped us derive
-				information on their existing practices and tools used for reviewing reports.
-				These interviews revealed that certain information was critical to the workflow
-				and also helped us identify the limitations of their current tools. These insights
-				then were instrumental in being able to derive use-cases and elicit detailed
-				requirements related to the tasks that could potentially leverage visual analytics
-				to make the review process efficient. -->
 
 			<h3>User Research</h3>
-			<p><strong>Users. </strong> Our users for MEV are drug safety evaluators at the Division of Medication Error
+			<p><strong>Target Users </strong></p> 
+			<p>Our users for MEV are drug safety evaluators at the Division of Medication Error
 				Prevention and Analysis (DMEPA) at the FDA who are responsible for the detection of medication errors.</p> 
 			
-			<p><strong>Task Analysis. </strong>I conducted user interviews and observed five users at the FDA to understand how they analyze medication error reports. The interviews were guided by the following questions with the goal of understanding their tasks and analysis workflow. </p>
+			<!-- <p><strong>Methodology </strong> </p>=
+			<p>The user research took a total of two weeks and included the following activities with five users. 
+					<ul>
+						<li><strong>Phase 1.</strong> 30 minutes contextual inquiry to observe users at work. </li>	
+						<li><strong>Week 2 (Phase 2b ).</strong> 30 minutes in person interviews for follow-up discussion and clarification.</li>
+					</ul>
+			</p> -->
+			
+			<p><strong>Methodology</strong></p>
+			<p></p>I conducted semi-structured user interviews and observed five users at the FDA to understand how they analyze medication error reports. The interviews were guided by the following questions with the goal of understanding their tasks and analysis workflow. </p>
 			<p>
 				<ul>
 					<li>How many drugs a safety evaluator  gets assigned to?</li>
@@ -126,6 +116,16 @@
 				</ul>
 			</p>
 		</div>
+
+		<figure class="alignCenter">
+				<img src="projects/MEVProcess.jpg" alt="User Workflow"> 
+		</figure>
+
+		<h3>User Feedback</h3>
+		<blockquote class="centerQuote"> "There is no way to see the most frequent medication errors from a list of reported errors."</blockquote>
+		<blockquote class="centerQuote"> "Most of the times we want to see all the reported MEDRA PT (medication errors) for a specific product and a time period, which is difficult to achieve currently."</blockquote>
+		<blockquote class="centerQuote"> "I struggle to see which products are involved in the error and what are the associated outcomes."</blockquote>
+
 
 		<h3>Design Requirements</h3>
 		<p> Based on my user research, the following features were identified as high priority for the visual analytics tool to help in screening critical medication errors.  
@@ -208,9 +208,12 @@
 			I designed and conducted a within subject task-based usability study, where each participant performed the tasks using MEV and their current tools (spreadsheets). Participants also completed a system usability questionnaire at the end. </p>
 		</p>
 		<p> 
-			<strong>Participants. </strong>I recruited 10 drug safety evaluators at the FDA via email and conducted the study in-person.		  
+			<strong>Participants </strong></p>
+		<p> 10 drug safety evaluators at the DMEPA team at the FDA were recruited via email for the in-person usability (A/B) testing.		  
 		</p>
-		<p><strong>Study Tasks. </strong> The following low-level tasks such as information search and extraction involved in the screening of the medication errors were identified via literature review and analyst's observation during contextual inquiries.</p>	
+		<p><strong>Study Tasks </strong> </p>
+			
+		<p>The following low-level tasks such as information search and extraction involved in the screening of the medication errors were identified via literature review and analyst's observation during contextual inquiries.</p>	
 			<ul style="list-style:none;">
 				<li><strong>T1. </strong>How many total reports have been reported during a time period?</li>
 				<li><strong>T2. </strong>Which medication error is reported the most for a time period?</li>
@@ -226,23 +229,33 @@
 			</ul>
 		</p>
 
-		<h3>Evaluation Metrics</h3>
-		<p>The evaluation metrics included system usability as well as the <strong>time</strong> taken to complete a task and the <strong>perceived ease</strong> on a 5-point Likert
+		<p><strong>Evaluation Metrics</strong></p>
+		<p>Besides general usability,  the metrics included the <strong>time</strong> taken to complete a task and the <strong>perceived ease</strong> on a 5-point Likert
 		scale (5 extremely easy and 1 extremely difficult) for completing each task. 
 		</p>
 
 		<figure>
 			<img src="projects/sus.jpg" alt="Evaluation"/> <br><br>
-			<figcaption> <strong>Left</strong> - System Usability Score (SUS) questionnaire. The total SUS (score) for MEV was 85 out of 100. <br> <strong>Right</strong> - Results of the tasks-based study. Overall participants took less time to complete the tasks with MEV as compared to their current tools (control) and perceived the tasks to be easier when performed with MEV. T8 & T9 were not supported by the current tools. 
+			<figcaption> <strong>Left</strong> - System Usability Score (SUS) questionnaire. The total SUS (score) for MEV was 85 out of 100. <strong>Right</strong> - Results of the tasks-based study. Overall participants took less time to complete the tasks with MEV as compared to their current tools (control) and perceived the tasks to be easier when performed with MEV. T8 & T9 were not supported by the current tools. 
 			</figcaption>
 		</figure>
 
+		<h3>User Feedback</h3>
+		<blockquote class="centerQuote">"Well, I think this tool makes it very easy to see what the reports are describing without going into much detail."</blockquote>
+		<blockquote class="centerQuote">"Though the text-extraction is not perfect but it gives us a big sense of what kind of errors are being reported."</blockquote>
+		<blockquote class="centerQuote">"It takes sometime to get used to the tool, then it is very easy and intuitive to use."</blockquote>
+
+		<h3 id="outcome">Takeaways</h3>
+		<p>
+				Results of the usability study suggest that performing review tasks using MEV is both efficient
+				and perceived easier than using current tools at the FDA. Study
+				results also suggest that analysts find MEV intuitive and easy to interact with.
+		</p>
+
+		<p>This project gave me the opportunity to leverage and improve my skills as a user researcher, a designer, and a data scientist. 
+		</p>
 		
-		<h3>Project Participation</h3>
-		<p> 
-			In this project, I worked with FDA stakeholders, domain experts from the DMEPA team at the FDA, researchers, data scientists, and developers. I conducted the user research to understand user's tasks and pain points, defined project goals, designed visual mockups, developed low- to medium-fidelity prototypes, and led and mentored the engineering team (MQP) to develop a web-based interactive visual analytics system.
-		</p> <br>
-		
+
 		<h3 id="related">Related publications</h3>
 		<ul>
 			<li> <a class="related" href="/papers/mev.pdf" target="_blank">
