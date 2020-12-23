@@ -2,7 +2,7 @@ element = document.getElementById("header");
 element.innerHTML = 
     '<nav class="clearfix">' +
         '<li class="title"><a href="index.html"><i id="homeIcon" class="fas fa-home"></i> Tabassum Kakar</a></li>'+
-        '<div><li class="page"><a href="projects.html">Portfolio</a></li>'+
+        '<div><li class="page"><a href="about.html">About Me</a></li>'+
         '<li class="label">|</li>'+
         '<li class="page"><a href="publications.html">Publications</a></li>'+
         '<li class="label">|</li>'+

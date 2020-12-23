@@ -1,119 +1,134 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta name="description" content="Personal Website." />
-    <meta name="keywords" content="Tabassum, Kakar, tkakar, Tabassum Kakar, USA, United States, Visual Analytics, Data Visualization, Analytics, Data Analysis, Qualitative Research, Quantitative Research, Pharmacovigilance, HCI, Human-Computer Interaction, UX, User Researcher, User Experience, Machine Learning" />
-
+  <head>
+      <meta name="description" content="Personal Website." />
+      <meta name="keywords" content="Tabassum, Kakar, tkakar, Tabassum Kakar, USA, United States, Visual Analytics, Data Visualization, Analytics, Data Analysis, Qualitative Research, Quantitative Research, HCI, Human-Computer Interaction, UX, User Researcher, User Experience, Machine Learning" />
+  
     <title>Tabassum Kakar</title>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
     <script type='text/javascript' src='js/fontawesome5.js'></script>
-</head>
+	</head>
 
 
 <body>
-  <div id="header"></div> 
-  <div id="mainPage">
+    <div id="header"></div> 
+    <div id="mainPage">
     <div class="wrapper">
-      <section>
-        <table id="intro" class="non-outline">
-          <col width="400" />
-          <tr>
-            <td style="text-align: center;"><img id="profileImg" src="images/profile.jpeg" style="width:300px;" />
-                <!-- <br /> -->
-                <div id="social-accounts-mini"> 
-                    <p id="emailSpan">tkakar_at_wpi_dot_edu</p>
-                        <p id="CVSpan">
-                          <a href="papers/CV.pdf" target="_blank">Curriculum Vitae</a>
-                        </p>  
-                    <span>
-                      <a href="https://github.com/tkakar" target="_blank">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </span>
-                    <span>
-                      <a href="https://scholar.google.com/citations?user=yDwzxBcAAAAJ" target="_blank">
-                        <i class="fab fa-google"></i>
-                      </a>
-                    </span>
-                    <span>
-                      <a href="https://www.linkedin.com/in/TabassumKakar" target="_blank">
-                        <i class="fab fa-linkedin-square"></i>
-                      </a>
-                    </span>
-
-                   
-                   
-                  </div>
-            </td>
-            <td id="introCell"> 
-            <!-- </br> -->
-            <h3> Tabassum Kakar </h3>
-              I'm completing my PhD at <a href="https://www.wpi.edu/academics/departments/data-science" target="_blank"> Worcester Polytechnic Institute</a>
-              focusing on <strong>Human-Computer Interaction (HCI)</strong> and designing and developing interactive <strong>Visual Analytics</strong>. 
-              <br></p>
-              
-              <p>I have worked with the FDA as an <a href="https://orise.orau.gov/fda/" target="_blank">ORISE Fellow </a> to conduct user research to inform the design of
-                visual analytics to assist drug-safety review workflows.</p>
-              
-              <p>I'm passionate about conducting qualitative and quantitative research and designing user-centered and data-driven visual solutions for problems that matter.</p>
-
-              <p>When not working, I enjoy hiking, baking, and spending time with my family.</p>
-
-              
-              <br />
-              </td>
-          </tr>
-        </table>
-        <br> 
-        
-        <div style="padding-left:20px;">
-            <p><strong>Programming</strong></p>
-        </div>
-
-        <div style="padding-left:20px;">
-            <table  class= "non-outline">
-                <col width="50%"/>
-                  <tr class="tableEducation">
-                    <td> 
-                      <h2>Education</h2>
+      <section> 
+            <div class="columnView">
+                    <div>
                         <div>
-                            <p>Ph.D. in Data Science (HCI &amp Visual Analytics).</p>
-                            <p class ="eduLinks"><a  href="https://www.wpi.edu/" target="_blank">Worcester Polytechnic Institute</a>, USA. </p>
+                            <h3 class="floatLeft"> Drug-Drug Interaction Visual Analytics (DIVA) </h3>
+                            <div class= "links">
+                                <span class="project-links">  
+                                        <a href="http://diva.wpi.edu:3000/" target="_blank"><i class="fas fa-home"></i> Web (Edge, Safari) </a>
+                                        <a href="papers/diva.pdf" target="_blank"><i class="far fa-file-pdf"></i> Paper </a>
+                                        <a href="https://www.youtube.com/watch?v=9SqcoXu1EGY\u0026feature=youtu.be" target="_blank"><i class="fas fa-video"></i> Video </a> 
+                                        <a href="https://bitbucket.org/divamqp/diva-node-web/src/master/" target="_blank"><i class="fab fa-github"></i> Code </a> 
+                                </span>
+                            </div>
                         </div>
-                      <div>
-                          <p>M.S. in Data Science.</p>
-                          <p class ="eduLinks"><a  href="https://www.wpi.edu/" target="_blank">Worcester Polytechnic Institute</a>, USA. </p>
-                      </div>
-      
-                      <div>
-                          <p> B.S. in Computer Software Engineering. </p>
-                          <p class ="eduLinks"><a  href="https://www.giki.edu.pk/" target="_blank">GIK Institute of Science and Technology</a>, Pakistan. </p>
-                      </div>
-                    </td>
-                  <td> 
-                      <h2>Skills and Interests</h2>
-                        <li>Visual Analytics & Data Visualization</li>
-                        <li>User-Centered Design & Research</li>
-                        <li>Qualitative & Quantitative Research</li>
-                        <li>User Empathy & Collaboration</li>
-                        <li>Project Management & Problem Solving</li>
-                        <!-- <li>User Experience Research &amp Design</li> -->
-    
-                    </td>
-                  </tr>
-              </table>
-        </div>
-        <div id="footer">
+                        <div>
+                            <img class="project-thumbnail" src="projects/diva.png" alt="Project 1"/>
+                            <div>
+                                <p> A visual analytics system designed based on the workflow of the FDA drug safety evaluators to support Pharmacovigilance activities such as screening and exploration of Drug-Drug Interaction (DDI) related adverse reaction signals generated via machine learning.
+                                </p>
+                                <a class="readMore" href="DIVA.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3 class="floatLeft"> Medication Error Screening and Visualization (MEV)</h3>
+                            <div class= "links">
+                                    <span class="project-links">  
+                                        <a href="http://mev.wpi.edu:3001" target="_blank"><i class="fas fa-home"></i> Web</a>
+                                        <a href="papers/mev.pdf" target="_blank"><i class="far fa-file-pdf"></i> Paper </a>
+                                        <!-- <a href="https://www.youtube.com/watch?v=9SqcoXu1EGY\u0026feature=youtu.be" target="_blank"><i class="fas fa-video"></i> Video </a>  -->
+                                        <a href="https://github.com/tkakar/MEV-MQP" target="_blank"><i class="fab fa-github"></i> Code </a> 
+                                    </span>
+                            </div>
+                        </div>
+                        <div>          
+                            <img class="project-thumbnail" src="projects/mev.png" alt="MEV">
+                            <div>
+                            <p> A visual analytics system developed following a user-centered design approach, allows drug safety evaluators to interactively analyze patterns in medication error reports
+                                    to help them screen critical errors efficeintly. </p>
+                            <a class="readMore" href="MEV.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- ********* Smardio -->
+
+                    <div>
+                        <div>
+                            <h3 class="floatLeft"> <img class = "iconText" src="thumbnails/smardioIcon.png"> </img> <span>A Personalized Smart Audiobook App (Design Challenge)</span></h3>
+                        </div>
+                        <div>          
+                            <img class="project-thumbnail" src="projects/smardio/smardio.png" alt="Smardio">
+                            <div>
+                            <p> A highly interactive and personal audiobook mobile app that allows users to bookmark, highlight excerpts, and add annotations to their audiobooks. 
+                            </p>
+                            <a class="readMore" href="Smardio.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div>
+                        <div>
+                            <h3 class="floatLeft"> Drug-Drug Interaction Detection via Machine Learning</h3>
+                            <div class= "links">
+                                    <span class="project-links">  
+                                            <a href="https://tkakar.github.io/MeDIAR/" target="_blank"><i class="fas fa-home"></i> Web</a>
+                                            <a href="papers/mediar.pdf" target="_blank"><i class="far fa-file-pdf"></i> Paper </a>
+                                            <a href="https://drive.google.com/file/d/15VbDn6_xr6aoLfNwLp5vnP6bnpOK02J7/view" target="_blank"><i class="fas fa-video"></i> Video </a> 
+                                            <a href="https://github.com/tkakar/MeDIAR" target="_blank"><i class="fab fa-github"></i> Code </a> 
+                                        </span>
+                            </div>
+                        </div>
+                        <div>          
+                            <img class="project-thumbnail" src="projects/MeDIAR.png" alt="MEV">
+                            <div>
+                            <p> A web-based analytics tool that visualizes the overview of drug-drug interaction signals (DIAR) generated via machine learning and uses glyphs to help
+                                    understand the ranking criteria of each signal along with the associated reports. </p>
+                            <a class="readMore" href="Mediar.html">Read More</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div>
+                        <div>
+                            <h3 class="floatLeft">Massachusetts Obesity Analysis - Class Project</h3>
+                            <div class= "links">
+                                    <span class="project-links">  
+                                            <a href="http://tkakar.github.io/DataVisFinal/index.html" target="_blank"><i class="fas fa-home"></i> Web</a>
+                                            <a href="http://tkakar.github.io/DataVisFinal/ProcessBook.pdf" target="_blank"><i class="far fa-file-pdf"></i> Report </a>
+                                            <a href="https://www.youtube.com/watch?v=O5CU03_WZOI" target="_blank"><i class="fas fa-video"></i> Video </a> 
+                                            <a href="https://github.com/tkakar/MA-Obesity" target="_blank"><i class="fab fa-github"></i> Code </a> 
+                                        </span>
+                            </div>
+                        </div>
+                        <div>          
+                            <img class="project-thumbnail" src="projects/obesity.png" alt="MEV">
+                            <div>
+                            <p> This project allows interactive analysis of the factors affecting obesity to help obesity policy and program decision makers in planning and allocating federal budgets to various food assistance programs. </p>
+                            <a class="readMore" href="http://tkakar.github.io/DataVisFinal/index.html" target="_blank">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+ 
+
+        <div id="footer"></div>
       </section>
     </div>
     </div> 
   </div>
 </body>
-
 <script type='text/javascript' src='js/main.js'></script>
 </html>
-
