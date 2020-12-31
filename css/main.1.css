@@ -20,7 +20,7 @@ body {
 	line-height:1.6;
 	/* line-height: 30px; */
 	font: 1.125em "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
+    color: black;
 	font-weight: normal;
 	/* background-attachment: fixed !important;
 	background: linear_gradient(#2a2a29, #1c1c1c) */
@@ -41,7 +41,7 @@ h3 {
 } 
 
 h1 {
-	font-size: 1.5em;
+	font-size: 25px;
      color:#287D7D; 
 }
 
@@ -56,7 +56,7 @@ h6 {
 }
 
 h3 {
-	line-height: 1.5em;
+	line-height: 24px;
 	font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 	font-weight: bold;
 	color: #2d5e9c;
@@ -83,19 +83,18 @@ dl {
 }
 
 .wrapper {
-	border:1px solid lightblue;
 	max-width: 900px;
 	margin: 0 auto;
 	position: relative;
 	padding: 20px;
-	/* margin-bottom: 20px; */
-	/* height: calc(100vh - 12vh); */
+	margin-bottom: 20px;
+	height: calc(100vh - 12vh);
 }
 
 #footer{
 	position:fixed;
 	max-width: 900px;
-	padding-top: 20px;
+	padding: 20px 20px 0px 20px;
 	background:white;
 	bottom :0px;
 }
@@ -193,6 +192,7 @@ dt {
 }
 
 #header {
+	padding: 20px;
 	z-index: 100;
 	left: 0;
 	top: 0px;
@@ -202,11 +202,10 @@ dt {
 	overflow: hidden;
 }
 
-#header nav div{
-	/* /* max-width: 900px; */
+#header nav {
+	max-width: 900px;
 	margin: 0 auto;
-	/* position: relative;  */
-	/* padding: 0px 20px; */
+	position:relative;
 }
 
 #header p{
@@ -235,14 +234,6 @@ dt {
 	text-align: center
 }
 
-/* #header nav li a:first-child{
-	padding: 10px 12px 10px 0px;
-}
-
-#header nav li a:last-child{
-	padding: 10px 0px 10px 12px;
-} */
-
 #header nav li a:hover {
 	text-decoration: cornsilk;
 	font-size: 23px;
@@ -253,10 +244,19 @@ dt {
 
 }
 
-/*  */
+#header nav div{
+	position:absolute;
+	right: 0px;
+}
 
 
-
+#header nav li.title {
+	float: left;
+	margin-right: 10px;
+	font-weight: bold;
+	padding: 0px 200px 0px 0px;
+	/* font-size: 11px */
+}
 
 #header nav li.title a:hover{
 		text-decoration: underline;
@@ -382,14 +382,6 @@ table.non-outline th {
 	border-bottom: 0px
 }
 
-table.pubse td{
-	padding: 15px 20px;
-}
-
-table.pubs td div{
-	margin-bottom: 3px;
-}
-
 table#social-accounts{
 	table-layout: fixed;
 	margin:0;
@@ -451,7 +443,7 @@ div#social-accounts-mini p{
 }
 
 .publication-title {
-	/* font-weight: bold */
+	font-weight: bold
 }
 
 .project-title {
@@ -460,7 +452,7 @@ div#social-accounts-mini p{
 }
 
 .publication-publisher {
-	/* font-style: italic; */
+	font-style: italic;
 	color: rgba(0, 0, 0, 0.6)
 }
 
@@ -752,15 +744,6 @@ div.columnView p{
 	text-align: justify;
 }
 
-.titleAbout{
-	padding: 20px;
-}
-.titleAbout p{
-	margin-top: 0px;
-	line-height: 27px;
-	text-align: justify;
-}
-
 .links{
 	float:right;
 	/* position: absolute;
@@ -775,7 +758,7 @@ div.columnView p{
 }
 .floatLeft{
 	float: left;
-	/* color: #333; */
+	color: #333;
 }
 
 .floatParent{
@@ -803,7 +786,7 @@ a.readMore:hover{
 }
 
 .related{
-	/* color:black; */
+	color:black;
 	font-size: 0.9em;
 }
 
@@ -846,23 +829,18 @@ span.menuPage {
 	/* padding: 10px 10px; */
 }
 .subheading{
-	/* color: #000; */
+	color: #000;
 	font-size: 18px;
 	font-weight: bold;
 	margin:0px !important;
 }
-.floatRight{
+/* .floatRight{
 	float:right;
 }
 
 .floatLeft{
 	float: left;
-}
-
-.emptyBlock{
-	width:100%;
-	height: 40px;
-}
+} */
 
 .imageAligned{
 	float:left;
@@ -939,7 +917,7 @@ figcaption{
 	/* ED7D67 */
 	font-size: 20px;
     font-style: italic;
-    /* color: black; */
+    color: black;
     margin: 25px;
     padding: 10px 10px 10px 20px;
     font-weight: 200;

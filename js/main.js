@@ -1,13 +1,13 @@
 element = document.getElementById("header");
 element.innerHTML = 
-    '<nav class="clearfix">' +
-        '<li class="title"><a href="index.html"><i id="homeIcon" class="fas fa-home"></i> Tabassum Kakar</a></li>'+
-        '<div><li class="page"><a href="about.html">About Me</a></li>'+
+    '<div class="wrapper"><nav class="clearfix" >' +
+        '<div class="floatLeft"><li class="title"><a href="index.html"><i id="homeIcon" class="fas fa-home"></i> Tabassum Kakar</a></li></div>'+
+        '<div class="floatRight"><li class="page"><a href="about.html">About Me</a></li>'+
         '<li class="label">|</li>'+
-        '<li class="page"><a href="publications.html">Publications</a></li>'+
+        '<li class="page"><a href="index.html">Projects</a></li>'+
         '<li class="label">|</li>'+
-        '<li class="page"><a href="awards.html">Awards</a></li> </div>'+
-    '</nav>';
+        '<li class="page"><a href="awards.html">Achievements</a></li> </div>'+
+    '</nav></div>';
 
 ftElement = document.getElementById("footer");
 ftElement.innerHTML = '<table id="social-accounts">' +
