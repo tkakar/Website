@@ -8,14 +8,28 @@ p{
 	line-height: 1.6;
 }
 
-/* p,
-pre {
-	margin: 1em 0
-} */
-
 img {
 	border: 0;
 	-ms-interpolation-mode: bicubic
+}
+
+a {
+    color: #03658C;
+	font-weight: 400;
+	text-decoration: none
+}
+
+a:hover {
+    color: #282772;
+}
+
+p,
+ul,
+ol,
+table,
+pre,
+dl {
+	margin: 0 0 20px
 }
 
 body {
@@ -59,7 +73,7 @@ h6 {
 	color: #e8e8e8
 }
 
-h3 {
+h3, a.headingLink{
 	line-height: 1.5em;
 	font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 	font-weight: bold;
@@ -67,24 +81,12 @@ h3 {
 	margin-top:20px;
 }
 
-a {
-    color: #03658C;
-	font-weight: 400;
-	text-decoration: none
+a.headingLink:hover{
+	color: #4f88d3;
 }
 
-a:hover {
-    color: #282772;
-}
 
-p,
-ul,
-ol,
-table,
-pre,
-dl {
-	margin: 0 0 20px
-}
+
 
 .wrapper {
 	/* border:1px solid lightblue; */
@@ -100,7 +102,7 @@ dl {
 	text-align: center;
 	/* position:fixed; */
 	/* max-width: 900px; */
-	padding-top: 40px;
+	padding-top: 80px;
 	/* background:white; */
 	/* bottom :0px; */
 }
@@ -958,16 +960,24 @@ figcaption{
 	margin-right: 40px;
  }
 
- .imageBox, .textBox{
-	 flex: 0 0 500px;
+ .imageBox{
+	 flex: 0 0 45%;
  }
+
+ .textBox{
+	/* flex: 0 0 45%; */
+}
 
  .contentDiv{
 	 padding: 50px 0px;
  }
 
  .contentDivNoBotPadding{
-	padding: 50px 0 0 0;
+	padding: 80px 0 0 0;
+ }
+
+ .bottomPadding{
+	margin:  0 0 50px 0;
  }
 
   .projectImages {
