@@ -83,7 +83,7 @@ dl {
 }
 
 .wrapper {
-	border:1px solid lightblue;
+	/* border:1px solid lightblue; */
 	max-width: 900px;
 	margin: 0 auto;
 	position: relative;
