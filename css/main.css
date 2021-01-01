@@ -748,7 +748,7 @@ div.columnView p{
 }
 
 .ProjectWrapper p{
-	text-align: justify;
+	/* text-align: justify; */
 	line-height: 30px;
 }
 
