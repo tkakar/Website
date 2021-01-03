@@ -102,7 +102,7 @@ a.headingLink:hover{
 	text-align: center;
 	/* position:fixed; */
 	/* max-width: 900px; */
-	padding-top: 80px;
+	padding: 80px;
 	/* background:white; */
 	/* bottom :0px; */
 }
@@ -749,7 +749,7 @@ div.columnView p{
 
 .ProjectWrapper p{
 	/* text-align: justify; */
-	line-height: 30px;
+	/* line-height: 30px; */
 }
 
 
@@ -894,9 +894,9 @@ figcaption{
 
   .vspace { height: 75px;}
 
-  h3, h2{
+  /* h3, h2{
 	padding-top: 85px; margin-top: -85px;
-  }
+  } */
 
   blockquote{
 	width: 90%;
@@ -995,3 +995,83 @@ figcaption{
  .projectLinks a{
 	 color:rgb(68, 67, 67);
  }
+
+ .topMargin{
+	 margin-top: 100px;
+ }
+
+ .btmMargin{
+	margin-bottom: 100px;
+}
+
+.mediumSizeFont{
+	/* font-size: 38px; */
+}
+
+.figBotMargin{
+	margin-bottom: 50px;
+}
+
+.banner{
+	margin-top:-18px;
+	position: relative;
+	text-align: center;
+	/* vertical-align: middle; */
+}
+
+.banner div{
+	position: absolute;
+	background:#FFF;
+	text-align: center;
+	padding:30px 30px 30px 0px;
+	top:72%;
+	left:10%;
+	padding:30px 45px 30px 45px;
+}
+
+.banner h2{
+	font-size:1.7em;
+	margin-bottom: -20px;
+}
+
+.bannerHeader{
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* background:#FFF; */
+}
+
+.detailsCont{
+	display: flex;
+	/* padding:15px; */
+}
+
+.detailsCont div{
+	flex: 1 1 0;
+	margin-right:40px;
+	/* padding: 20px;  */
+}
+
+/* .detailsCont div:first-child{
+	margin-right:20px;
+	padding: 20px 20px 20px 0;
+}*/
+
+.detailsCont div:last-child{
+	margin-right:0px;
+}
+
+.detailsCont div li{
+	list-style: none;
+	line-height: 1.6;
+	/* padding-left: 10px; */
+}
+
+hr{
+	border-top: 1px solid black;
+}
+
+.topMargin20{
+	margin-top:-30px;
+}
