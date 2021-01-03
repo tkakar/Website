@@ -120,7 +120,11 @@ a.headingLink:hover{
 #introCell{
 	/* font-size: 20px; */
 	line-height: 30px;
-	text-align: justify;
+	/* text-align: justify; */
+}
+
+#introCell p{
+	margin-bottom: 40px;
 }
 
 #introCell a, .eduLinks a{
@@ -192,7 +196,7 @@ th {
 
 td {
 	text-align: left;
-	padding: 5px 10px;
+	/* padding: 5px 10px; */
 	border-bottom: 1px solid #434343
 }
 
@@ -386,10 +390,11 @@ screen and (max-width: 480px) {
 	--icon-hover: #282772;
 }
 
-section img {
-	border-radius: 10px;
-	image-rendering: auto
+img#profileImg {
+	border-radius: 50%;
+	/* image-rendering: auto; */
 }
+
 
 section #title {
 	margin-bottom: 0
@@ -630,7 +635,7 @@ section .large-image {
 
 .tableEducation p{
 	margin-bottom: 3px;
-	line-height: 1.2;
+	/* line-height: 1.6; */
 }
 
 .tableEducation td{
@@ -866,7 +871,7 @@ span.menuPage {
 .imageFloatTextLeft{
 	float:left;
 	width:40%;
-	text-align: center;
+	/* text-align: center; */
 	/* display:inline-block; */
 	vertical-align: middle;
 	margin-right: 20px;
@@ -922,7 +927,7 @@ figcaption{
   }
 
   .tableEducation td li{
-		line-height: 26px;
+		line-height: 1.8;
   }
 
   /* .grid-container {
@@ -1025,9 +1030,11 @@ figcaption{
 	background:#FFF;
 	text-align: center;
 	padding:30px 30px 30px 0px;
+	/* width: 745px; */
 	top:72%;
-	left:10%;
+	/* left:10%; */
 	padding:30px 45px 30px 45px;
+	box-shadow: -7px 10px 10px 0px #f5f1f1;
 }
 
 .banner h2{
@@ -1065,7 +1072,8 @@ figcaption{
 
 .detailsCont div li{
 	list-style: none;
-	line-height: 1.6;
+	margin-bottom:10px;
+	/* line-height: 1.6; */
 	/* padding-left: 10px; */
 }
 
@@ -1073,6 +1081,6 @@ hr{
 	border-top: 1px solid black;
 }
 
-.topMargin20{
-	margin-top:-30px;
+.topMargin130{
+	margin-top:130px;
 }

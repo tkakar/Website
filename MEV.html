@@ -16,96 +16,94 @@
 <div id="mainPage">
 
 <div class="wrapper ProjectWrapper">
-	<section><br>
-		<div class="floatParent">
-			<h2 class="floatLeft"> Medication Error Screening and Visualization (MEV)</h2> 
-			<div class= "links projects">
-					<span class="project-links">  
-							<a href="http://mev.wpi.edu:3001" target="_blank"><i class="fas fa-home"></i> Web</a>
-							<a href="papers/mev.pdf" target="_blank"><i class="far fa-file-pdf"></i> Paper </a>
-							<!-- <a href="https://www.youtube.com/watch?v=9SqcoXu1EGY\u0026feature=youtu.be" target="_blank"><i class="fas fa-video"></i> Video </a>  -->
-							<a href="https://github.com/tkakar/MEV-MQP" target="_blank"><i class="fab fa-github"></i> Code </a> 
-					</span>
+	<section>
+		
+		<div class="banner">
+				<img src="projects/MEVBanner2.jpg">
+				<div>
+					<h2 class="bannerHeader"> Medication Error Visualization (MEV)</h2> 
+					<em>Stakeholder - <a href="https://www.fda.gov/home">U.S. Food and Drug Administration (FDA) </a> <span style="font-size:60px;">.</span>  2018 - 2019</em>
+				</div>
+		</div>
+
+		<div id="Goal" class="topMargin130">
+				<h3>Project Goal</h3>
+				<p>To design a visual analytics tool that uses interactive visualizations to support the analysis of <a href="https://www.fda.gov/drugs/drug-safety-and-availability/medication-errors-related-cder-regulated-drug-products">medication error reports</a> to help FDA in screening critical medication errors.  </p>
+		</div>
+
+		<div class="detailsCont topMargin" >
+			<div>
+				<h3>Project Scope</h3><hr>
+				<li>Understand medication error screening process.</li>
+				<li>Design a visual interface for error screening.</li>
+				<li>Validate the design.</li>
 			</div>
-		</div><br> 
+			<div>
+					<h3>Team</h3><hr>
+					<li>Three Stakeholders</li>
+					<li>Two  Researchers</li>
+					<li>Four Developers</li>
+					<li>One Data Scientist</li>
+			</div>
+			<div>
+				<h3>My Role</h3><hr>
+				<!-- Led all activities. -->
+				<li>Research</li>
+				<li>Sketching</li>
+				<li>Visual & UX Design</li>
+				<li>Usability Study</li>
+			</div>
+		</div>
+		
 
-		<div class="designMenu">
-			<ul>
-				<span class="menuPage"> Go to:  </span>
-				<a class="menuPage" href="./MEV.html#Goal"> Goal </a>
-				<a class="menuPage" href="./MEV.html#Research"> User Research </a>
-				<a class="menuPage" href="./MEV.html#Design"> Design Process </a>
-				<a class="menuPage" href="./MEV.html#Interface"> MEV Interface</a>
-				<a class="menuPage" href="./MEV.html#CaseStudy"> Usability Study</a>
-				<!-- <a class="menuPage" href="./MEV.html#related">  Publications </a> -->
-			</ul>
-		</div> <br>
-
-
-		<h3>What are Medication Errors?</h3>
-		<p>
-		  Medication errors involve preventable mistakes that are caused by wrong administration or handling of drug due to ambiguity of drug label or
-		  carton. 
-		  <!-- <br><br> -->
-		  Every year, serious preventable medication errors occur in 3.8 million inpatient admissions and 3.3 million outpatient visits with an estimated annual cost
-		  of <strong>$20 billion</strong>. 
-		  <br><br>
-
-		  <h3>How are Medication Errors Detected?</h3>
-		 <p>
-		    The U.S. Food and Drug Administration (FDA) analyzes medication error reports collected via <a href="https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers">adverse event reporting system</a> to take appropriate regulatory actions to prevent these errors from happening in the future. 
-		 </p> <br>
-
+		<div class="topMargin">
+			<h3>About Medication Errors</h3>
+			<p>
+				Medication errors are preventable mistakes caused by wrong administration or handling of drugs due to ambiguity of the drug label or
+				carton. 
+				Every year, serious preventable medication errors occur in 3.8 million inpatient admissions and 3.3 million outpatient visits with an estimated annual cost
+				of <strong>$20 billion</strong>. 
+				<br><br>
+			</p>
+		
+		</div>
+		  <!-- <h3>How are Medication Errors Detected?</h3>
+		 <p> -->
+		    <!-- The U.S. Food and Drug Administration (FDA) analyzes medication error reports collected via <a href="https://www.fda.gov/drugs/surveillance/questions-and-answers-fdas-adverse-event-reporting-system-faers">adverse event reporting system</a> to take appropriate regulatory actions to prevent these errors from happening in the future.  -->
+		 <!-- </p> <br> -->
+<!-- 
 		<div class="clearfix">
 			<div class="imageAligned"><img src="projects/ME.jpg" alt="Medication Error Example"/> <br>
 			<p><strong>Left.</strong> Example of a similar looking drug container label for different dosages with a potential for error. <strong>Right.</strong> Fix for error.</p> </div>
 			<div class="imageFloatText"><p>Cisatracurium is a muscle paralyzing drug used before surgeries. Using an appropriate dose is crucial to avoid serious consequences.<br> <br>
 				Similar looking drug container labels (Left) for different dosages can result in errors. 
-				<!-- <br> <br> -->
 				A possible container revision (Right) by the FDA that easily distinguishes the different dosages to avoid medication errors resulting in life-threatening outcomes. 
 			</p></div>
-		</div> <br>
+		</div> <br> -->
 
-		<h3>Challenge</h3>
-		<div class="clearfix">
-				<div class="imageRightAligned" ><img src="projects/FBIS.png" alt="Current Tools"/> <br><br>
-				<p>Current tool used at the FDA for medication error screening.</p></div>
-				<div class="imageFloatTextLeft" ><p class="TextVMiddle">Currently, FDA uses spreadsheets or traditional SQL-style table
-						layout to analyze these reports which can be time-consuming and tedious. 
-					
-				<br>	<br><strong>The goal of this project </strong> is to design a visual analytics tool that 
-					helps drug safety evaluators in screening and prioritizing critical medication errors.  
-				</p></div>
-		</div> <br>
+		<div class="topMargin">
+			<h3>Problem</h3>
+			<div class="clearfix">
+					<div class="imageRightAligned" ><img src="projects/FBIS.png" alt="Current Tools"/> <br><br>
+					<!-- <p>Current tool used at the FDA for medication error screening.</p> -->
+				</div>
+					<div class="imageFloatTextLeft" ><p class="TextVMiddle">Currently, FDA uses spreadsheets or traditional table
+							layout to analyze <a href="https://www.fda.gov/drugs/drug-safety-and-availability/medication-errors-related-cder-regulated-drug-products">medication error reports</a> which can be inefficient and error-prone. 
+						
+					<br><br><strong>The goal of this project </strong> is to design a visual analytics tool that 
+						helps drug safety evaluators in screening and prioritizing critical medication errors.  
+					</p></div>
+			</div> 
+		</div>
 
-		<h3>Team</h3>
-		<p> 
-			In this project, I led all the activities from ideation and user research to the development of functional system.  I worked with FDA stakeholders, domain experts from the DMEPA team at the FDA, researchers, data scientists, and developers. 
-		</p> <br>
-
-		<!-- <div class="vspace" id="Goal"></div>
-		<h2  class="alignCenterCaption" id="Goal">Project Goal</h2>
-		<p class="alignCenterCaption">
-				To design a visual analytics tool that leverages interactive visualizations to support the exploration of semi-structured medication error reports to help drug safety evaluators in screening and prioritizing critical medication errors.  
-		</p> <br> -->
-
-		<div id="Research">
+		<div class="topMargin">
 
 			<h3>User Research</h3>
-			<p><strong>Target Users </strong></p> 
 			<p>Our users for MEV are drug safety evaluators at the Division of Medication Error
-				Prevention and Analysis (DMEPA) at the FDA who are responsible for the detection of medication errors.</p> 
-			
-			<!-- <p><strong>Methodology </strong> </p>=
-			<p>The user research took a total of two weeks and included the following activities with five users. 
-					<ul>
-						<li><strong>Phase 1.</strong> 30 minutes contextual inquiry to observe users at work. </li>	
-						<li><strong>Week 2 (Phase 2b ).</strong> 30 minutes in person interviews for follow-up discussion and clarification.</li>
-					</ul>
-			</p> -->
+				Prevention and Analysis (DMEPA) at the FDA who are responsible for the detection and prevention of medication errors.</p> 
 			
 			<p><strong>Methodology</strong></p>
-			<p></p>I conducted semi-structured user interviews and observed five users at the FDA to understand how they analyze medication error reports. The interviews were guided by the following questions with the goal of understanding their tasks and analysis workflow. </p>
+			<p></p>I observed five users at the FDA and conducted semi-structured interviews to understand how they analyze medication error reports. These interviews were guided by the following questions. </p>
 			<p>
 				<ul>
 					<li>How many drugs a safety evaluator  gets assigned to?</li>
@@ -117,152 +115,139 @@
 			</p>
 		</div>
 
-		<figure class="alignCenter">
-				<img src="projects/MEVProcess.jpg" alt="User Workflow"> 
-		</figure>
 
-		<h3>User Feedback</h3>
-		<blockquote class="centerQuote"> "There is no way to see the most frequent medication errors from a list of reported errors."</blockquote>
-		<blockquote class="centerQuote"> "Most of the times we want to see all the reported MEDRA PT (medication errors) for a specific product and a time period, which is difficult to achieve currently."</blockquote>
-		<blockquote class="centerQuote"> "I struggle to see which products are involved in the error and what are the associated outcomes."</blockquote>
+		<div class="topMargin">
+			<h3>User Feedback to Elicit Requirements</h3>
+			<blockquote class="centerQuote"> "There is no way to see the most frequent medication errors from a list of reported errors."</blockquote>
+			<blockquote class="centerQuote"> "Most of the times we want to see all the reported MEDRA PT (medication errors) for a specific product and a time period, which is difficult to achieve currently."</blockquote>
+			<blockquote class="centerQuote"> "I struggle to see which products are involved in the error and what are the associated outcomes."</blockquote>
+		</div>
 
+		<div class="topMargin">
+				<h3>User Workflow to Screen Medication Errors</h3>
+				<figure class="alignCenter">
+						<img src="projects/MEVProcess.jpg" alt="User Workflow"> 
+				</figure>
+		</div>
 
-		<h3>Design Requirements</h3>
-		<p> Based on my user research, the following features were identified as high priority for the visual analytics tool to help in screening critical medication errors.  
-			<ul>
-				<li>Providing an overview of the core data elements for data screening.</li>
-				<li>Supporting the exploration of reports over time.</li>	
-				<li>Facilitating the analysis of demographics.</li>
-				<li>Allowing the analysts to quickly see the related atttributes of a selected data point.</li>
-				<li>Facilitating identification of critical reports. </li>
-				<li>Providing access to the actual reports associated with the selection.</li>
-			</ul>
-		</p>
-
-		<h3 id="Design">Design Process and Challenges</h3>
-		<p><strong>Data. </strong> The medication error reports contain structured information about patients such as age and gender, and medication errors such as types of errors, stages where
-		error has occurred, the names of the medications, and the causes of the errors. 
-		<br><br>
-		Majority of the information about is present in the text narratives. We extract
-		this information using NLP and domain dictionaries. 
+		<div class="topMargin">
+			<h3>Design Requirements</h3>
+			<p> Based on the user research, the following features were identified as high priority for the visual analytics tool to help in screening critical medication errors.  
+				<ul>
+					<li>Provide an overview of the core data elements for data screening.</li>
+					<li>Support the exploration of reports over time.</li>	
+					<li>Facilitate the analysis of demographics.</li>
+					<li>Allow the analysts to quickly see the related atttributes of a selected data point.</li>
+					<li>Facilitate identification of critical reports. </li>
+					<li>Provide access to the actual reports associated with the selection.</li>
+				</ul>
+			</p>
+		</div>
 		
-		<br><br>
-		The challenge with these text entities is that they are high-cardinality categorical attributes. For instance, hundreds of drugs can be reported
-		in a week. Therefore, a visual design is needed that can display a large number of attribute categories in a compact display with minimal visual clutter.
-		</p>
-		<p><strong>Task. </strong>
-		The drug safety evaluators at the FDA receive hundreds of these reports on a weekly basis. As a first task, they aim to see an overall summary of the
-		their weekly reports and then filter and analyze reports based on critical attribute values to decide whether an action needs to be taken to mitigate the error. 
-		</p>
-	   <!-- <figure>
-			<img src="projects/divaProcess.jpg" alt="User Journey"/> 
-			<figcaption> Summary of user workflow in identifying critical drug safety signals from getting the reports to making decisions to take regulatory actions.</figcaption>
-		</figure> -->
-
-		<p><strong>Design Considerations. </strong>
-		To design an interactive overview of the reports set, I considered multiple visual designs based on literature review.
-		<br><br>
-		The candidate visualizations to represent these categorical attributes included a multi-layer radial chart, bar-charts, parallel coordinates, node-link diagrams, and treemap visualization aa depicted in the following medium-fidelity prototypes.
-		<br><br>
-		In these designs, the severity of the reports (outcome) for each attribute value is mapped to the color, and the size of the bar or chunk is mapped to the count of the reports. 
-		<br><br>
-		Based on analyzing the pros and cons of each design, and discussions with users, the treemap visualization (right) is selected as the final design. However, with real data the color hue created different shades, therefore, color saturation 
-		is used in the final prototype. 
-		</p>
 		
-		<!-- <img src="projects/MEVdesign.png" alt="Design Alternatives"/> <br><br> -->
 
-		<figure>
-			<img src="projects/MEVdesign.png" alt="Design Alternatives"><br><br>
-			<figcaption><strong>Left</strong> - Alternative designs including multi-layer donut chart, bar-chart, and parallel coordinates to display the medication error related information.
-				<strong>Right</strong> - Multi-layer Treemap-like design selected for the problem due to compact layout. 
-			</figcaption>
-		</figure>
-
-		<p>
-		</p> <br>
-
-		<h3 id="Interface"> MEV Interface - Final Design </h3>
-		  
-		<p> The interface of MEV (shown below) consists of three multiple coordinated
-			views to help with the medication error reports screening. 
+		<div class="topMargin">
+			<h3 id="Design">Design Process and Ideation </h3>
+			<p><strong>Data. </strong> The medication error reports contain structured information about patients such as age and gender, and medication errors such as types of errors, stages where
+			error has occurred, the names of the medications, and the causes of the errors with the later being high-cardinality attributes. 
 			<br><br>
-			The top panel displays the structured information such as demographics of the patients. 
-			
-			<br><br>The middle panel represents a 
-			treemap visualization for each of the high-cardinality categorical attributes extracted via NLP.
+	
+			<strong>Literature Review. </strong>
+			To design an interactive overview of the reports set, we considered multiple visual designs based on literature review.
+			The candidate visualizations to represent these categorical attributes included a node-link diagrams, parallel coordinates, multi-layer bar-charts and treemap visualization.
 			<br><br>
-			 The bottom panel represents the temporal summary of the reports, that is,
-			reports count per day. Interactive brushing and linking is provided to select and analyze report with particular attribute values. The color encodes the severity of the reports.
-		</p>
 
+			<strong>Encodings. </strong>
+			The outcome of the reports (severity) for each attribute value is mapped to the color, and the count of the reports is mapped to the size of each element. 
+			</p>
+		</div>
+
+		<div class="topMargin">
+			<h3> Visual Design and Sketches </h3>
+			<p>Based on analyzing the pros and cons of each design, and discussions with users, the treemap visualization (bottom-right) is selected as the final design. However, with real data the color hue created different shades, therefore, color saturation 
+					is used in the final design.</p><br>
+			<figure>
+					<img src="projects/MEVdesign1.jpg" alt="Design Alternatives"><br><br>
+			</figure>
+
+			<figure>
+					<img src="projects/MEVdesign2.jpg" alt="Design Alternatives">
+			</figure>
+		</div>
+
+
+		<div class="topMargin">
+			<h3 id="Interface"> MEV Interface - Final Design </h3>
 		
-		<figure>
-			<img src="projects/MEVFull.png" alt="Final Interface"/> <br><br>
-			<figcaption> Medication Error Visualization (MEV) Interface to identify critical medication errors by interactively exploring reports information. 
-			</figcaption>
-		</figure>		
-		
-		<h3 id="CaseStudy">Uability Study</h3>
-		<p> 
-			I designed and conducted a within subject task-based usability study, where each participant performed the tasks using MEV and their current tools (spreadsheets). Participants also completed a system usability questionnaire at the end. </p>
-		</p>
-		<p> 
-			<strong>Participants </strong></p>
-		<p> 10 drug safety evaluators at the DMEPA team at the FDA were recruited via email for the in-person usability (A/B) testing.		  
-		</p>
-		<p><strong>Study Tasks </strong> </p>
+			<p>The top panel on MEV interface displays the structured information such as demographics of the patients. The middle panel represents a treemap visualization for each of the high-cardinality categorical attributes.
+			   The bottom panel represents the temporal summary of the reports, that is,
+		       reports count per day. </p><br>
+
+			<figure>
+				<img src="projects/MEVFull.png" alt="Final Interface"/> 
+			</figure>	
+		</div>
+
+		<div class="topMargin">
+			<h3 id="CaseStudy">Uability Study for MEV Validation </h3>
+			<p> I designed and moderated a within subject task-based usability study with <strong>ten users</strong> at the FDA. Each user performed the tasks related to information search and extraction using MEV and their current tools (spreadsheets). Users also completed a system usability questionnaire at the end. </p>
+			</p>
+			<!-- <p><strong>Participants</strong></p>
+			<p> 10 drug safety evaluators at the DMEPA team at the FDA were recruited via email for the in-person usability (A/B) testing.</p>
 			
-		<p>The following low-level tasks such as information search and extraction involved in the screening of the medication errors were identified via literature review and analyst's observation during contextual inquiries.</p>	
-			<ul style="list-style:none;">
-				<li><strong>T1. </strong>How many total reports have been reported during a time period?</li>
-				<li><strong>T2. </strong>Which medication error is reported the most for a time period?</li>
-				<li><strong>T3. </strong>Which drug has most severe outcomes for a selected medication error?</li>
-				<li><strong>T4. </strong>Which gender and age have most severe outcomes?</li>
-				<li><strong>T5. </strong>Which age group is most prevalent in reports related to a selected product?</li>
-				<li><strong>T6. </strong>What are the two most frequent medication errors reported with a select product, age group, and
-					gender?</li>
-				<li><strong>T7. </strong>Given the report distribution of a drug for female patients with a specified age group, what are
-					the critical medication errors that need to be analyzed?</li>
-				<li><strong>T8. </strong>What are the two most frequent root causes of error for a selected drug and medication error?</li>
-				<li><strong>T9. </strong>What are the two most common reported stages of errors for a drug and a medication error?</li>
-			</ul>
-		</p>
-
-		<p><strong>Evaluation Metrics</strong></p>
-		<p>Besides general usability,  the metrics included the <strong>time</strong> taken to complete a task and the <strong>perceived ease</strong> on a 5-point Likert
-		scale (5 extremely easy and 1 extremely difficult) for completing each task. 
-		</p>
-
-		<figure>
-			<img src="projects/sus.jpg" alt="Evaluation"/> <br><br>
-			<figcaption> <strong>Left</strong> - System Usability Score (SUS) questionnaire. The total SUS (score) for MEV was 85 out of 100. <strong>Right</strong> - Results of the tasks-based study. Overall participants took less time to complete the tasks with MEV as compared to their current tools (control) and perceived the tasks to be easier when performed with MEV. T8 & T9 were not supported by the current tools. 
-			</figcaption>
-		</figure>
-
-		<h3>Results - Users Like It</h3>
-		<blockquote class="centerQuote">"Well, I think this tool makes it very easy to see what the reports are describing without going into much detail."</blockquote>
-		<blockquote class="centerQuote">"... It gives us a big sense of what kind of errors are being reported."</blockquote>
-		<blockquote class="centerQuote">"It takes sometime to get used to the tool, then it is very easy and intuitive to use."</blockquote>
-
-		<h3 id="outcome">Takeaways</h3>
-		<p>
-			 Visual analytics make error detection efficient and easier than using spreadsheets.
-		</p>
-
-		<p>I learned to conduct contextual inquiries to understand user tasks and design visuals and evaluation based on these tasks. 
-		</p>
+			<p><strong>Study Tasks </strong> </p>
+			<p> Low-level tasks such as information search and extraction involved in the screening of the medication errors were identified via users' observation during contextual inquiries and literature review.</p>	
+			 -->
+			<!-- <p><strong>Evaluation Metrics</strong></p>
+			<p>Besides general usability,  the metrics included the <strong>time</strong> taken to complete a task and the <strong>perceived ease</strong> on a 5-point Likert
+			scale (5 extremely easy and 1 extremely difficult) for completing each task. 
+			</p> -->
+		</div>
+		<div class="topMargin">
+			<h3>Findings - MEV is Easy and Efficient in Screening Medication Errors</h3>
+			<p>Results of the usability study show that participants took less time to complete the tasks with MEV as compared to their current tools (control). Users also considered these tasks to be easier when performed with MEV.</p><br>
+			<figure>
+				<img src="projects/sus.jpg" alt="Evaluation"/>
+				<!-- <figcaption> <strong>Left</strong> - System Usability Score (SUS) questionnaire. The total SUS (score) for MEV was 85 out of 100. <strong>Right</strong> - Results of the tasks-based study. Overall participants took less time to complete the tasks with MEV as compared to their current tools (control) and perceived the tasks to be easier when performed with MEV. T8 & T9 were not supported by the current tools.  -->
+				</figcaption>
+			</figure>
+		</div>
 		
+		
+		<div class="topMargin">
+			<h3>Results - Users Liked It</h3>
+			<blockquote class="centerQuote">"Well, I think this tool makes it very easy to see what the reports are describing without going into much detail."</blockquote>
+			<blockquote class="centerQuote">"... It gives us a big sense of what kind of errors are being reported."</blockquote>
+			<blockquote class="centerQuote">"It takes sometime to get used to the tool, then it is very easy and intuitive to use."</blockquote>
+		</div>
 
-		<!-- <h3 id="related">Related publications</h3>
-		<ul>
-			<li> <a class="related" href="/papers/mev.pdf" target="_blank">
-				Kakar, Tabassum, Xiao Qin, Cory M. Tapply, Oliver Spring, Derek Murphy, Daniel Yun, Elke A. Rundensteiner et al. "MEV: Visual Analytics for Medication Error Detection." In VISIGRAPP (3: IVAPP), pp. 72-82. 2019.
-			</a></li>
-			<li> <a class="related" href="/papers/MedViz.pdf" target="_blank">
-				Kakar, Tabassum, Xiao Qin, Cory M. Tapply, Oliver Spring, Derek Murphy, Daniel Yun, Elke A. Rundensteiner et al. "Designing a Visual Analytics System for Medication Error Screening and Detection." In International Joint Conference on Computer Vision, Imaging and Computer Graphics, pp. 285-312. Springer, Cham, 2019.
-			</a></li>
-		</ul> -->
+
+		<div class="topMargin">
+				<h3>Takeaways</h3>
+				<ul>
+					<li>MEV makes the error screening tasks 5 times efficient than spreadsheets.</li>
+					<li>Error screening with spreadsheets is twice as difficult as with MEV. </li>
+					<li>Task-based visual analytics improve error detection and user experience.</li>
+				</ul> 
+		</div>
+		
+		<div class="topMargin">
+				<h3 id="outcome">Next Steps</h3>
+				<ul> 
+					<li>Integrating external data sources such as <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and <a href="https://dailymed.nlm.nih.gov/dailymed/">DailyMed</a> to investigate an error.</li>
+					<li>Adding support for analyzing the relevant reports after screening a medication error.</li>
+					<li>Allowing users to share their findings and analyses with their team members.</li>
+				</ul> <br>
+
+				<p>I learned to ask as many probing questions during contextual inquiries as possible. I also learned to advocate for users and their needs when working with developers. 
+			
+		</div>
+
+		<div class="topMargin">
+				<h3 >Read More</h3>
+				<p>For more details on this problem and the usability study, please read this <a href="papers/mev.pdf" target="_blank">publication</a>. </p>
+		</div>
+		
 	</section>
 	<div id="footer"></div>
 </div>
