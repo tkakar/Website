@@ -14,13 +14,13 @@ img {
 }
 
 a {
-    color: #03658C;
+    color:#6676a3;
 	font-weight: 400;
 	text-decoration: none
 }
 
 a:hover {
-    color: #282772;
+    color: #434a61;
 }
 
 p,
@@ -124,7 +124,8 @@ a.headingLink:hover{
 }
 
 #introCell a, .eduLinks a{
-	color: #7c8398;
+	/* color: #7c8398; */
+	/* color: #7c8398; */
 }
 
 section img {
